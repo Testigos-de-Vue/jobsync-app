@@ -8,12 +8,16 @@ import PrimeVue from "primevue/config";
 import 'primevue/resources/primevue.min.css';
 
 // App Theme
-import 'primevue/resources/themes/soho-light/theme.css';
+import 'primevue/resources/themes/viva-light/theme.css';
 
 // Add Components
 import 'primeicons/primeicons.css';
+import InputText from 'primevue/inputtext';
+import Button from 'primevue/button'
 
 createApp(App)
     .use(PrimeVue, { ripple: true })
     .use(i18n)
+    .component('pv-input', InputText)
+    .component('pv-button', Button)
     .mount('#app')
