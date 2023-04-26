@@ -15,9 +15,13 @@ import 'primeicons/primeicons.css';
 import InputText from 'primevue/inputtext';
 import Button from 'primevue/button'
 
+// Router
+import {router} from "./router.js";
+
 createApp(App)
     .use(PrimeVue, { ripple: true })
     .use(i18n)
+    .use(router)
     .component('pv-input', InputText)
     .component('pv-button', Button)
     .mount('#app')
