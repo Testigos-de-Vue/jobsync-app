@@ -1,3 +1,7 @@
 {
-  "hello": "Hola Mundo"
+  "auth": {
+    "sign-title": "Inicio de sesión",
+    "e-mail": "Correo",
+    "password": "Contraseña"
+  }
 }
