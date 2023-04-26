@@ -1,10 +1,14 @@
-<script setup>
+<script>
+import {defineComponent} from "vue";
+import Forgotpassword from "./authentication/components/forgotpassword.component.vue";
+
+export default defineComponent({
+    components: {Forgotpassword}
+})
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold bg-red-400">
-    Hello world!
-  </h1>
+    <forgotpassword></forgotpassword>
 </template>
 
 <style scoped>
