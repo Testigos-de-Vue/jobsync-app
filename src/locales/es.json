@@ -1,4 +1,11 @@
 {
+  "sidebar": {
+    "home": "Inicio",
+    "recruitments": "Reclutamientos",
+    "organization": "Organización",
+    "settings": "Configuración",
+    "switch-team": "Cambiar Equipo"
+  },
   "auth": {
     "sign-title": "Inicio de sesión",
     "e-mail": "Correo",

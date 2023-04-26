@@ -1,4 +1,11 @@
 {
+  "sidebar": {
+    "home": "Home",
+    "recruitments": "Recruitments",
+    "organization": "Organization",
+    "settings": "Settings",
+    "switch-team": "Switch Team"
+  },
   "auth": {
     "sign-title": "Sign In",
     "e-mail": "E-mail",
