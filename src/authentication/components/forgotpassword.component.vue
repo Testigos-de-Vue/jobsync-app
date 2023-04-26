@@ -26,8 +26,6 @@
 </template>
 
 <script>
-import {PvIcon} from "primevue/icons";
-
 export default {
     name: "forgotpassword",
     components: {PvButton, PvInputtext, PvIcon}
