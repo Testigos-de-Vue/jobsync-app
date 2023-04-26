@@ -1,7 +1,7 @@
 <template>
   <pv-card>
       <template #header>
-          <h3>Forgot Pasword</h3>
+          <h3>Forgot Password</h3>
           <h4>Enter your email associated with your JobSync account and we will send you a reset link</h4>
       </template>
       <template #content>
