@@ -1,3 +1,5 @@
 {
-  "hello": "Hello World"
+  "hello": "Hello World",
+  "forgot": "Forgot Password",
+  "instruct": "Enter your email associated with your JobSync account and we will send you a reset link"
 }

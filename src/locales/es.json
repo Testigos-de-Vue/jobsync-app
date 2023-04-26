@@ -1,3 +1,5 @@
 {
-  "hello": "Hola Mundo"
+  "hello": "Hola Mundo",
+  "forgot": "Contraseña olvidada",
+  "instruct": "Ingrese el correo asociado con su cuenta de JobSync y le enviaremos un link de reinicio"
 }
