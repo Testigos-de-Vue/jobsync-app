@@ -14,7 +14,7 @@ import 'primevue/resources/themes/soho-light/theme.css';
 import 'primeicons/primeicons.css';
 import DataTable from "primevue/datatable";
 import Card from "primevue/card";
-import {Icon} from "primevue/icons";
+//import {Icon} from "primevue/icons";
 import InputText from "primevue/inputtext";
 import Button from "primevue/button";
 
@@ -24,6 +24,6 @@ createApp(App)
     .component('pv-card',Card)
     .component('pv-button',Button)
     .component('pv-datatable',DataTable)
-    .component('pv-icon',Icon)
+    //.component('pv-icon',Icon)
     .component('pv-inputtext',InputText)
     .mount('#app')
