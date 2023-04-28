@@ -17,11 +17,13 @@ import Button from 'primevue/button'
 
 // Router
 import router from "./router/index.js";
+import Sidebar from "primevue/sidebar";
 
 createApp(App)
-    .use(PrimeVue, { ripple: true })
-    .use(i18n)
-    .use(router)
-    .component('pv-input', InputText)
-    .component('pv-button', Button)
-    .mount('#app')
+  .use(PrimeVue, { ripple: true })
+  .use(i18n)
+  .use(router)
+  .component('pv-sidebar', Sidebar)
+  .component('pv-input', InputText)
+  .component('pv-button', Button)
+  .mount('#app')
