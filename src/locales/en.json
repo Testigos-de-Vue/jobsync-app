@@ -1,10 +1,12 @@
 {
-  "sidebar": {
+  "navbar": {
     "home": "Home",
     "recruitments": "Recruitments",
     "organization": "Organization",
     "settings": "Settings",
-    "switch-team": "Switch Team"
+    "switch-team": "Switch Team",
+    "login": "Log In",
+    "sign-up": "Sign Up"
   },
   "auth": {
     "sign-title": "Sign In",

@@ -1,10 +1,12 @@
 {
-  "sidebar": {
+  "navbar": {
     "home": "Inicio",
     "recruitments": "Reclutamientos",
     "organization": "Organización",
     "settings": "Configuración",
-    "switch-team": "Cambiar Equipo"
+    "switch-team": "Cambiar Equipo",
+    "login": "Iniciar Sesión",
+    "sign-up": "Registrarse"
   },
   "auth": {
     "sign-title": "Inicio de sesión",
