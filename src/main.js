@@ -16,7 +16,7 @@ import InputText from 'primevue/inputtext';
 import Button from 'primevue/button'
 
 // Router
-import {router} from "./router.js";
+import router from "./router/index.js";
 
 createApp(App)
     .use(PrimeVue, { ripple: true })
