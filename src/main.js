@@ -14,15 +14,19 @@ import 'primevue/resources/themes/viva-light/theme.css';
 import 'primeicons/primeicons.css';
 import InputText from 'primevue/inputtext';
 import Button from 'primevue/button'
+import Sidebar from "primevue/sidebar";
+import Checkbox from "primevue/checkbox";
+import Dropdown from "primevue/dropdown";
 
 // Router
 import router from "./router/index.js";
-import Sidebar from "primevue/sidebar";
 
 createApp(App)
   .use(PrimeVue, { ripple: true })
   .use(i18n)
   .use(router)
+  .component('pv-checkbox', Checkbox)
+  .component('pv-dropdown', Dropdown)
   .component('pv-sidebar', Sidebar)
   .component('pv-input', InputText)
   .component('pv-button', Button)
