@@ -9,8 +9,19 @@
     "sign-up": "Sign Up"
   },
   "auth": {
+    "name": "Name",
     "sign-title": "Sign In",
     "e-mail": "E-mail",
-    "password": "Password"
+    "password": "Password",
+    "confirm-password": "Confirm Password",
+    "country": "Country",
+    "phone-number": "Phone Number",
+    "select-country": "Select a Country",
+    "subscribe-newsletter": "I want to receive news from JobSync via email.",
+    "agree-privacy-policy": "I have read and agree to the",
+    "privacy-policy": "Privacy Policy"
+  },
+  "link": {
+    "terms-of-service": "https://jobsync.netlify.app/terms-of-service/"
   }
 }
