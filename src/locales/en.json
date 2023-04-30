@@ -21,6 +21,24 @@
     "agree-privacy-policy": "I have read and agree to the",
     "privacy-policy": "Privacy Policy"
   },
+  "create-org": {
+    "title": "Create an organization",
+    "choose-picture": "Choose a picture",
+    "company-name": "Company Name",
+    "choose-plan": "Choose a plan",
+    "company-email": "Company Email",
+    "country": "Country",
+    "select-country": "Select a Country",
+    "phone-number": "Phone Number",
+    "company-address": "Company Address",
+    "address-placeholder": "Street Address, City",
+    "add-members-msg": "Once you create the organization, you can add members and set up administrators",
+    "create-organization": "Create organization"
+  },
+  "plans": {
+    "free": "Free",
+    "premium": "Premium"
+  },
   "link": {
     "terms-of-service": "https://jobsync.netlify.app/terms-of-service/"
   }
