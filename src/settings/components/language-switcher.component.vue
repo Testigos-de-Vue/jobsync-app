@@ -12,13 +12,22 @@ export default {
   data() {
     return {
       languages: ['English', 'Español'],
-      locale: 'English'
+      locale: this.getCurrentLanguage()
+    }
+  },
+  methods: {
+    getCurrentLanguage() {
+      switch(this.$i18n.locale) {
+        case 'en': return 'English';
+        case 'es': return 'Español';
+        default: return 'English';
+      }
     }
   },
   watch: {
     locale(selectedLanguage) {
       this.$i18n.locale = selectedLanguage.slice(0, 2).toLowerCase();
-    },
+    }
   }
 }
 </script>
