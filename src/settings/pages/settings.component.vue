@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-1 grid-rows-2 md:grid-cols-[auto_1fr] md:grid-rows-1">
+  <div class="grid grid-cols-1 md:grid-cols-[auto_1fr]">
     <div class="flex flex-col gap-4">
       <pv-button
         rounded
