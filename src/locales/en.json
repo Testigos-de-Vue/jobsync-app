@@ -1,4 +1,7 @@
 {
+  "general": {
+    "go-back-btn-label": "Go back"
+  },
   "navbar": {
     "home": "Home",
     "recruitments": "Recruitments",
@@ -14,12 +17,16 @@
     "e-mail": "E-mail",
     "password": "Password",
     "confirm-password": "Confirm Password",
+    "new-password": "New Password",
+    "confirm-new-password": "Confirm New Password",
+    "change-password": "Change password",
     "country": "Country",
     "phone-number": "Phone Number",
     "select-country": "Select a Country",
     "subscribe-newsletter": "I want to receive news from JobSync via email.",
     "agree-privacy-policy": "I have read and agree to the",
-    "privacy-policy": "Privacy Policy"
+    "privacy-policy": "Privacy Policy",
+    "save-changes": "Save changes"
   },
   "create-org": {
     "title": "Create an organization",
@@ -34,6 +41,18 @@
     "address-placeholder": "Street Address, City",
     "add-members-msg": "Once you create the organization, you can add members and set up administrators",
     "create-organization": "Create organization"
+  },
+  "settings": {
+    "profile-btn-label": "Profile Settings",
+    "app-btn-label": "App Settings"
+  },
+  "profile-settings": {
+    "title": "Profile Settings",
+    "change-pp": "Change profile picture"
+  },
+  "app-settings": {
+    "title": "App Settings",
+    "lang-switcher-label": "Choose your preferred language:"
   },
   "plans": {
     "free": "Free",
