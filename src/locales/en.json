@@ -30,7 +30,13 @@
     "login": "Log In",
     "forgot-password": "Forgot Password?",
     "account-question": "No account?",
-    "sign-up": "Sign up"
+    "sign-up": "Sign up",
+    "password-recovery": {
+      "title": "Password Recovery",
+      "enter-new-password": "Enter new password",
+      "go-back": "Go back to",
+      "change-password": "Change Password"
+    }
   },
   "create-org": {
     "title": "Create an organization",
