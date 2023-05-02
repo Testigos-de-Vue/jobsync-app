@@ -5,7 +5,7 @@
         <img class="h-8 w-auto" src="/jobsync-logo.png" alt="JobSync Logo">
       </div>
       <div>
-        <h1 class="text-center font-bold text-3xl">Sign Up</h1>
+        <h1 class="text-center font-bold text-3xl">{{ $t('auth.sign-up-title') }}</h1>
       </div>
       <div class="grid grid-cols-2 font-medium gap-8">
         <button

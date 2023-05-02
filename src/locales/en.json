@@ -14,6 +14,7 @@
   "auth": {
     "name": "Name",
     "sign-title": "Sign In",
+    "sign-up-title": "Sign Up",
     "e-mail": "E-mail",
     "password": "Password",
     "confirm-password": "Confirm Password",
@@ -37,6 +38,10 @@
       "go-back": "Go back to",
       "change-password": "Change Password"
     }
+  },
+  "greeting": {
+    "morning-greeting": "Good Morning, ",
+    "start-greeting": "Let's Start!"
   },
   "create-org": {
     "title": "Create an organization",
@@ -84,8 +89,8 @@
   },
   "link": {
     "terms-of-service": "https://jobsync.netlify.app/terms-of-service/"
-  }
-  "forgot"{
+  },
+  "forgot": {
     "forgot": "Forgot Password",
     "instruct": "Enter your email associated with your JobSync account and we will send you a reset link"
   }
