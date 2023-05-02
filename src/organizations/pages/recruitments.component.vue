@@ -44,7 +44,7 @@
   import RecruitmentCard from "../components/recruitment-card.component.vue";
   
   export default {
-    name: "organization",
+    name: "recruitments",
     components: { RecruitmentCard },
     data() {
     return {
