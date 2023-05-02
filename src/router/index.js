@@ -6,6 +6,7 @@ import Register from "../authentication/pages/register.component.vue";
 import CreateOrganization from "../organizations/pages/create-organization.component.vue";
 import Settings from "../settings/pages/settings.component.vue";
 import Home from "../recruiters/pages/recruiters-home.component.vue";
+import PasswordRecovery from "../authentication/pages/password-recovery.component.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -15,6 +16,7 @@ const router = createRouter({
     { path: '/create-organization', name: 'Create Organization', component: CreateOrganization },
     { path: '/settings', name: 'Settings', component: Settings },
     { path: '/home', name: 'Home', component: Home},
+    { path: '/password-recovery', name: 'Password Recovery', component: PasswordRecovery},
   ]
 });
 
