@@ -22,6 +22,7 @@ import Checkbox from "primevue/checkbox";
 import Dropdown from "primevue/dropdown";
 import FileUpload from "primevue/fileupload";
 import Message from "primevue/message";
+import Card from "primevue/card";
 
 
 createApp(App)
@@ -35,4 +36,5 @@ createApp(App)
   .component('pv-sidebar', Sidebar)
   .component('pv-input', InputText)
   .component('pv-button', Button)
+  .component('pv-card', Card)
   .mount('#app')
