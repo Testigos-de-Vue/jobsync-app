@@ -37,6 +37,12 @@
       "enter-new-password": "Ingresa una nueva contraseña",
       "go-back": "Volver a",
       "change-password": "Cambiar contraseña"
+    },
+    "password-forgot":{
+      "title": "¿Olvidaste tu contraseña?",
+      "description": "No te preocupes, ingresa tu email y te enviaremos un link para que puedas recuperarla",
+      "send-link": "Enviar link de recuperación",
+      "go-back": "Volver a"
     }
   },
   "greeting": {
@@ -89,10 +95,6 @@
   },
   "link": {
     "terms-of-service": "https://jobsync.netlify.app/es/terminos-de-servicio/"
-  },
-  "forgot": {
-    "forgot": "Contraseña olvidada",
-    "instruct": "Ingrese el correo asociado con su cuenta de JobSync y le enviaremos un link de reinicio"
-   }
+  }
 }
 
