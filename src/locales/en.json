@@ -26,7 +26,11 @@
     "subscribe-newsletter": "I want to receive news from JobSync via email.",
     "agree-privacy-policy": "I have read and agree to the",
     "privacy-policy": "Privacy Policy",
-    "save-changes": "Save changes"
+    "save-changes": "Save changes",
+    "login": "Log In",
+    "forgot-password": "Forgot Password?",
+    "account-question": "No account?",
+    "sign-up": "Sign up"
   },
   "create-org": {
     "title": "Create an organization",
