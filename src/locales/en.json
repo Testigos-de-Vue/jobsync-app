@@ -1,5 +1,69 @@
 {
-  "hello": "Hello World",
-  "forgot": "Forgot Password",
-  "instruct": "Enter your email associated with your JobSync account and we will send you a reset link"
+  "general": {
+    "go-back-btn-label": "Go back"
+  },
+  "navbar": {
+    "home": "Home",
+    "recruitments": "Recruitments",
+    "organization": "Organization",
+    "settings": "Settings",
+    "switch-team": "Switch Team",
+    "login": "Log In",
+    "sign-up": "Sign Up"
+  },
+  "auth": {
+    "name": "Name",
+    "sign-title": "Sign In",
+    "e-mail": "E-mail",
+    "password": "Password",
+    "confirm-password": "Confirm Password",
+    "new-password": "New Password",
+    "confirm-new-password": "Confirm New Password",
+    "change-password": "Change password",
+    "country": "Country",
+    "phone-number": "Phone Number",
+    "select-country": "Select a Country",
+    "subscribe-newsletter": "I want to receive news from JobSync via email.",
+    "agree-privacy-policy": "I have read and agree to the",
+    "privacy-policy": "Privacy Policy",
+    "save-changes": "Save changes"
+  },
+  "create-org": {
+    "title": "Create an organization",
+    "choose-picture": "Choose a picture",
+    "company-name": "Company Name",
+    "choose-plan": "Choose a plan",
+    "company-email": "Company Email",
+    "country": "Country",
+    "select-country": "Select a Country",
+    "phone-number": "Phone Number",
+    "company-address": "Company Address",
+    "address-placeholder": "Street Address, City",
+    "add-members-msg": "Once you create the organization, you can add members and set up administrators",
+    "create-organization": "Create organization"
+  },
+  "settings": {
+    "profile-btn-label": "Profile Settings",
+    "app-btn-label": "App Settings"
+  },
+  "profile-settings": {
+    "title": "Profile Settings",
+    "change-pp": "Change profile picture"
+  },
+  "app-settings": {
+    "title": "App Settings",
+    "lang-switcher-label": "Choose your preferred language:"
+  },
+  "plans": {
+    "free": "Free",
+    "premium": "Premium"
+  },
+  "link": {
+    "terms-of-service": "https://jobsync.netlify.app/terms-of-service/"
+  }
+  "forgot"{
+    "hello": "Hello World",
+    "forgot": "Forgot Password",
+    "instruct": "Enter your email associated with your JobSync account and we will send you a reset link"
+  }
 }
