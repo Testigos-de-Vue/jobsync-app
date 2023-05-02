@@ -17,7 +17,7 @@ const router = createRouter({
     { path: '/password-recovery', name: 'Password Recovery', component: PasswordRecovery},
     { path: '/create-organization', name: 'Create Organization', component: CreateOrganization },
     { path: '/settings', name: 'Settings', component: Settings },
-    { path: '/organization', name: 'Organization', component: Organization }
+    { path: '/organization', name: 'Organization', component: Organization },
     { path: '/home', name: 'Home', component: Home},
   ]
 });
