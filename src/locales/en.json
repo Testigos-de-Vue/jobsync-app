@@ -63,6 +63,9 @@
     "job-post-status-label": "Job Post Status",
     "organizer-label": "Organizer"
   },
+  "activities": {
+    "schedule-title": "Today's Schedule"
+  },
   "settings": {
     "profile-btn-label": "Profile Settings",
     "app-btn-label": "App Settings"

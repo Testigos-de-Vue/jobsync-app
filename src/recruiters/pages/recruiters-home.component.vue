@@ -6,15 +6,8 @@
     <div class="flex justify-center mb-7">
       <calendar/>
     </div>
-    <div class="rounded-lg shadow-md h-400 w-400">
-      <div class="bg-blue-500 rounded-t-lg h-20 flex justify-center items-center">
-        <img
-            class="h-10 w-10 float-left mr-4"
-            src="/public/task-list-icon.svg"
-            alt="task-list image"
-        >
-        <h1 class="text-white text-2xl font-bold">Today's Schedule</h1>
-      </div>
+    <div>
+      <schedule/>
     </div>
   </div>
 
@@ -23,10 +16,11 @@
 <script>
 import Calendar from "../../shared/components/calendar.component.vue";
 import Greeting from "../../shared/components/greeting.component.vue";
-import PendingTasks from "../../shared/components/pending-tasks.component.vue";
+import Schedule from "../../activities/pages/schedule.component.vue";
+
 export default {
   name: "recruiters-home",
-  components: {Calendar, Greeting, PendingTasks},
+  components: {Calendar, Greeting, Schedule},
 }
 </script>
 

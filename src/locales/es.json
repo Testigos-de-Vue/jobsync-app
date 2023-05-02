@@ -63,6 +63,9 @@
     "job-post-status-label": "Estado de Publicación de Oferta",
     "organizer-label": "Organizador"
   },
+  "activities": {
+    "schedule-title": "Tareas de hoy"
+  },
   "settings": {
     "profile-btn-label": "Configurar perfil",
     "app-btn-label": "Configurar aplicación"
