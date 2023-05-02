@@ -85,4 +85,8 @@
   "link": {
     "terms-of-service": "https://jobsync.netlify.app/terms-of-service/"
   }
+  "forgot"{
+    "forgot": "Forgot Password",
+    "instruct": "Enter your email associated with your JobSync account and we will send you a reset link"
+  }
 }
