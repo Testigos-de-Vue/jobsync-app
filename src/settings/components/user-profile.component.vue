@@ -51,7 +51,7 @@
 
 <script>
 export default {
-    name: "article-card",
+    name: "user-profile",
     data() {
         return {
             user: {
