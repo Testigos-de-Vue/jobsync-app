@@ -14,6 +14,7 @@
   "auth": {
     "name": "Nombre",
     "sign-title": "Inicio de sesión",
+    "sign-up-title": "Registro",
     "e-mail": "Correo",
     "password": "Contraseña",
     "confirm-password": "Confirmar Contraseña",
@@ -36,7 +37,17 @@
       "enter-new-password": "Ingresa una nueva contraseña",
       "go-back": "Volver a",
       "change-password": "Cambiar contraseña"
+    },
+    "password-forgot":{
+      "title": "¿Olvidaste tu contraseña?",
+      "description": "No te preocupes, ingresa tu email y te enviaremos un link para que puedas recuperarla",
+      "send-link": "Enviar link de recuperación",
+      "go-back": "Volver a"
     }
+  },
+  "greeting": {
+    "morning-greeting": "Buenos días, ",
+    "start-greeting": "¡Empecemos!"
   },
   "create-org": {
     "title": "Crea una organización",
@@ -85,9 +96,5 @@
   "link": {
     "terms-of-service": "https://jobsync.netlify.app/es/terminos-de-servicio/"
   }
-  "forgot"{
-    "forgot": "Contraseña olvidada",
-    "instruct": "Ingrese el correo asociado con su cuenta de JobSync y le enviaremos un link de reinicio"
-   }
 }
 

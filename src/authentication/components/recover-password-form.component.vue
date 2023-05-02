@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: "password-recovery-form"
+  name: "recover-password-form"
 }
 </script>
 
