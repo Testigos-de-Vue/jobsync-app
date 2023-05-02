@@ -26,7 +26,17 @@
     "subscribe-newsletter": "Quiero suscribirme a las noticias de JobSync por email.",
     "agree-privacy-policy": "He leído y acepto las",
     "privacy-policy": "Políticas de Privacidad",
-    "save-changes": "Guardar cambios"
+    "save-changes": "Guardar cambios",
+    "login": "Inicio de sesióm",
+    "forgot-password": "¿Te olvidaste la contraseña?",
+    "account-question": "¿Aún no tienes cuenta?",
+    "sign-up": "Registrarme",
+    "password-recovery": {
+      "title": "Recuperación de contraseña",
+      "enter-new-password": "Ingresa una nueva contraseña",
+      "go-back": "Volver a",
+      "change-password": "Cambiar contraseña"
+    }
   },
   "create-org": {
     "title": "Crea una organización",
@@ -41,6 +51,20 @@
     "address-placeholder": "Calle, Ciudad",
     "add-members-msg": "Una vez cree la organización, podrá agregar miembros y configurar los administradores",
     "create-organization": "Crear organización"
+  },
+  "organization-profile": {
+    "new-recruitment-btn-label": "Crear Reclutamiento",
+    "past-recruitment-btn-label": "Historial de Reclutamientos",
+    "past-candidates-btn-label": "Historial de Candidatos"
+  },
+  "recruitment-card": {
+    "start-date-label": "Fecha de Inicio",
+    "recruitment-status-label": "Estado de Reclutamiento",
+    "job-post-status-label": "Estado de Publicación de Oferta",
+    "organizer-label": "Organizador"
+  },
+  "activities": {
+    "schedule-title": "Tareas de hoy"
   },
   "settings": {
     "profile-btn-label": "Configurar perfil",
@@ -62,8 +86,8 @@
     "terms-of-service": "https://jobsync.netlify.app/es/terminos-de-servicio/"
   }
   "forgot"{
-    "hello": "Hola Mundo",
     "forgot": "Contraseña olvidada",
     "instruct": "Ingrese el correo asociado con su cuenta de JobSync y le enviaremos un link de reinicio"
    }
 }
+
