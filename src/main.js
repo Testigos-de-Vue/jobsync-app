@@ -23,6 +23,7 @@ import Dropdown from "primevue/dropdown";
 import FileUpload from "primevue/fileupload";
 import Message from "primevue/message";
 import Card from "primevue/card";
+import Calendar from 'primevue/calendar'
 
 
 createApp(App)
@@ -37,4 +38,5 @@ createApp(App)
   .component('pv-input', InputText)
   .component('pv-button', Button)
   .component('pv-card', Card)
+  .component('pv-calendar', Calendar)
   .mount('#app')
