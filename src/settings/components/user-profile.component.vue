@@ -2,7 +2,7 @@
     <form class="panel">
       <pv-card class="userinfo">
           <template #header>
-              <img class="image" src="{{user.profileImageUrl}}" alt="user image">
+              <img class="image" src={{user.profileImageUrl}} alt="user image">
               <pv-button class="w-full text-center" type="submit" label= rounded></pv-button>
               <h1>{{user.name}}</h1>
           </template>
