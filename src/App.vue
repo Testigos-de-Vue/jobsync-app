@@ -41,7 +41,8 @@ export default {
   data() {
     return {
       visibleMobileBar: false,
-      authenticationPaths: new Set(["/login", "/register"]),
+      authenticationPaths: new Set(["/login", "/register",
+        "/password-recovery"]),
       user: {
         id: 1,
         name: "Name LastName super largo",
