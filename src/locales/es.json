@@ -42,6 +42,17 @@
     "add-members-msg": "Una vez cree la organización, podrá agregar miembros y configurar los administradores",
     "create-organization": "Crear organización"
   },
+  "organization-profile": {
+    "new-recruitment-btn-label": "Crear Reclutamiento",
+    "past-recruitment-btn-label": "Historial de Reclutamientos",
+    "past-candidates-btn-label": "Historial de Candidatos"
+  },
+  "recruitment-card": {
+    "start-date-label": "Fecha de Inicio",
+    "recruitment-status-label": "Estado de Reclutamiento",
+    "job-post-status-label": "Estado de Publicación de Oferta",
+    "organizer-label": "Organizador"
+  },
   "settings": {
     "profile-btn-label": "Configurar perfil",
     "app-btn-label": "Configurar aplicación"

@@ -42,6 +42,17 @@
     "add-members-msg": "Once you create the organization, you can add members and set up administrators",
     "create-organization": "Create organization"
   },
+  "organization-profile": {
+    "new-recruitment-btn-label": "Create Recruitment",
+    "past-recruitment-btn-label": "Recruitments History",
+    "past-candidates-btn-label": "Candidates History"
+  },
+  "recruitment-card": {
+    "start-date-label": "Start Date",
+    "recruitment-status-label": "Status",
+    "job-post-status-label": "Job Post Status",
+    "organizer-label": "Organizer"
+  },
   "settings": {
     "profile-btn-label": "Profile Settings",
     "app-btn-label": "App Settings"
