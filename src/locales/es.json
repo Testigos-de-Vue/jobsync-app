@@ -30,7 +30,13 @@
     "login": "Inicio de sesióm",
     "forgot-password": "¿Te olvidaste la contraseña?",
     "account-question": "¿Aún no tienes cuenta?",
-    "sign-up": "Registrarme"
+    "sign-up": "Registrarme",
+    "password-recovery": {
+      "title": "Recuperación de contraseña",
+      "enter-new-password": "Ingresa una nueva contraseña",
+      "go-back": "Volver a",
+      "change-password": "Cambiar contraseña"
+    }
   },
   "create-org": {
     "title": "Crea una organización",
