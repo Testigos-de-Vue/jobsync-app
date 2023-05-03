@@ -24,12 +24,16 @@ import FileUpload from "primevue/fileupload";
 import Message from "primevue/message";
 import Card from "primevue/card";
 import Calendar from 'primevue/calendar'
+import {createPinia} from "pinia";
 
+// Pinia
+const pinia = createPinia();
 
 createApp(App)
   .use(PrimeVue, { ripple: true })
   .use(i18n)
   .use(router)
+  .use(pinia)
   .component('pv-message', Message)
   .component('pv-file-upload', FileUpload)
   .component('pv-checkbox', Checkbox)

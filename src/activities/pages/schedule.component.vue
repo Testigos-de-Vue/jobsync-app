@@ -20,25 +20,20 @@
 
 <script>
 import PendingTaskCard from "../components/pending-task-card.component.vue"
+import {TaskApiService} from "../services/taskApi.service.js";
 export default {
   name: "schedule",
   components: { PendingTaskCard },
   data() {
     return {
-      tasks: [
-        {   
-            id: 1,
-            time: "9:00 - 13:00",
-            description: "Make new test for software developer",
-        },
-        {
-            id: 2,
-            time: "16:00 - 16:30",
-            description: "Interview Susane Itala",
-        }
-      ],
+      tasks: [],
+      taskApi: new TaskApiService()
     }
-    },
+  },
+  created() {
+    this.taskApi.getAll()
+        .then(response => this.tasks = response.data);
+  }
 }
 </script>
 

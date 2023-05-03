@@ -43,7 +43,8 @@
       "description": "Enter your email address and we'll send you a link to reset your password.",
       "send-link": "Send Link",
       "go-back": "Go back to"
-    }
+    },
+    "logout": "Logout"
   },
   "greeting": {
     "morning-greeting": "Good Morning, ",

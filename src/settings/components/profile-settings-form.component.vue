@@ -49,7 +49,7 @@
           </div>
           <div>
             <label for="phone-number">{{ $t('auth.phone-number') }}</label>
-            <pv-input id="phone-number" required class="w-full" type="number" />
+            <pv-input id="phone-number" v-model="user.phoneNumber" required class="w-full" type="number" />
           </div>
         </div>
         <div>
@@ -84,6 +84,7 @@
 
 <script>
 import {CountriesApiService} from "../../shared/services/countries/countries.service.js";
+import {AuthApiService} from "../../authentication/services/authApiService.js";
 
 export default {
   name: "profile-settings-form",
@@ -92,16 +93,8 @@ export default {
       reader: new FileReader(),
       previewImage: null,
       file: null,
-      user: {
-        id: 1,
-        name: "Name LastName super largo",
-        password: "super-secure",
-        profileImageUrl: "https://is3-ssl.mzstatic.com/image/thumb/Purple115/v4/c3/a9/b9/c3a9b968-256b-dea6-e76c-d635f0bb2ee9/source/512x512bb.jpg",
-        isRecruiter: true,
-        subTitle: "ACME Studios",
-        email: "thisIsMyEmail@mail.com",
-        subscribedToNewsLetter: false
-      },
+      user: {},
+      authApi: new AuthApiService(),
       countries: [],
       countriesApi: new CountriesApiService(),
       selectedCountry: 'Peru',
@@ -112,6 +105,8 @@ export default {
   },
   created() {
     this.loadCountries();
+    this.authApi.getUserById(1)
+      .then(response => this.user = response.data);
   },
   methods: {
     loadCountries() {
