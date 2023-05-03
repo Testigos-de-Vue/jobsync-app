@@ -1,0 +1,100 @@
+{
+  "general": {
+    "go-back-btn-label": "Go back"
+  },
+  "navbar": {
+    "home": "Home",
+    "recruitments": "Recruitments",
+    "organization": "Organization",
+    "settings": "Settings",
+    "switch-team": "Switch Team",
+    "login": "Log In",
+    "sign-up": "Sign Up"
+  },
+  "auth": {
+    "name": "Name",
+    "sign-title": "Sign In",
+    "sign-up-title": "Sign Up",
+    "e-mail": "E-mail",
+    "password": "Password",
+    "confirm-password": "Confirm Password",
+    "new-password": "New Password",
+    "confirm-new-password": "Confirm New Password",
+    "change-password": "Change password",
+    "country": "Country",
+    "phone-number": "Phone Number",
+    "select-country": "Select a Country",
+    "subscribe-newsletter": "I want to receive news from JobSync via email.",
+    "agree-privacy-policy": "I have read and agree to the",
+    "privacy-policy": "Privacy Policy",
+    "save-changes": "Save changes",
+    "login": "Log In",
+    "forgot-password": "Forgot Password?",
+    "account-question": "No account?",
+    "sign-up": "Sign up",
+    "password-recovery": {
+      "title": "Password Recovery",
+      "enter-new-password": "Enter new password",
+      "go-back": "Go back to",
+      "change-password": "Change Password"
+    },
+    "password-forgot": {
+      "title": "Forgot Password",
+      "description": "Enter your email address and we'll send you a link to reset your password.",
+      "send-link": "Send Link",
+      "go-back": "Go back to"
+    },
+    "logout": "Logout"
+  },
+  "greeting": {
+    "morning-greeting": "Good Morning, ",
+    "start-greeting": "Let's Start!"
+  },
+  "create-org": {
+    "title": "Create an organization",
+    "choose-picture": "Choose a picture",
+    "company-name": "Company Name",
+    "choose-plan": "Choose a plan",
+    "company-email": "Company Email",
+    "country": "Country",
+    "select-country": "Select a Country",
+    "phone-number": "Phone Number",
+    "company-address": "Company Address",
+    "address-placeholder": "Street Address, City",
+    "add-members-msg": "Once you create the organization, you can add members and set up administrators",
+    "create-organization": "Create organization"
+  },
+  "organization-profile": {
+    "new-recruitment-btn-label": "Create Recruitment",
+    "past-recruitment-btn-label": "Recruitments History",
+    "past-candidates-btn-label": "Candidates History"
+  },
+  "recruitment-card": {
+    "start-date-label": "Start Date",
+    "recruitment-status-label": "Status",
+    "job-post-status-label": "Job Post Status",
+    "organizer-label": "Organizer"
+  },
+  "activities": {
+    "schedule-title": "Today's Schedule"
+  },
+  "settings": {
+    "profile-btn-label": "Profile Settings",
+    "app-btn-label": "App Settings"
+  },
+  "profile-settings": {
+    "title": "Profile Settings",
+    "change-pp": "Change profile picture"
+  },
+  "app-settings": {
+    "title": "App Settings",
+    "lang-switcher-label": "Choose your preferred language:"
+  },
+  "plans": {
+    "free": "Free",
+    "premium": "Premium"
+  },
+  "link": {
+    "terms-of-service": "https://jobsync.netlify.app/terms-of-service/"
+  }
+}

@@ -1,0 +1,78 @@
+<template>
+  <div
+    class="h-screen grid grid-rows-[auto_1fr] md:grid-rows-1 md:place-items-center bg-tertiary"
+    :class="{ ['md:grid-cols-[auto_1fr]']: !this.isAnAuthenticationPath($route.path) }">
+    <header class="flex relative md:hidden justify-center items-center bg-white p-4">
+      <button
+        class="p-2 absolute left-4"
+        aria-label="Toggle navigation menu"
+        @click="toggleBottomBar"
+      >
+        <i class="pi pi-bars" style="font-size: 1.5rem"/>
+      </button>
+      <router-link to="/home">
+        <img
+          class="h-14 w-auto"
+          src="/jobsync-logo.png"
+          alt="JobSync Logo"
+        >
+      </router-link>
+    </header>
+    <aside v-if="!isAnAuthenticationPath($route.path)" class="hidden md:flex p-8 h-full">
+      <side-bar v-bind:user="user" />
+    </aside>
+    <main class="p-8 container h-full">
+      <router-view />
+    </main>
+  </div>
+  <mobile-nav-bar
+    :visible="visibleMobileBar"
+    v-bind:user="user"
+    v-on:hide="hideBottomBar"
+  />
+</template>
+
+<script>
+// Dependencies
+import SideBar from "./shared/components/side-bar.component.vue";
+import MobileNavBar from "./shared/components/mobile-nav-bar.component.vue";
+import {AuthApiService} from "./authentication/services/authApiService.js";
+export default {
+  components: {MobileNavBar, SideBar},
+  data() {
+    return {
+      visibleMobileBar: false,
+      authenticationPaths: new Set(["/login", "/register","/recover-password", "/forgot-password"]),
+      authApi: new AuthApiService(),
+      user: {}
+    }
+  },
+  created() {
+    this.authApi.getUserById(1)
+      .then(response => this.user = response.data);
+  },
+  methods: {
+    isAnAuthenticationPath(path) {
+      return this.authenticationPaths.has(path);
+    },
+    toggleBottomBar() {
+      this.visibleMobileBar = !this.visibleMobileBar;
+    },
+    hideBottomBar(){
+      this.visibleMobileBar = false;
+    }
+  }
+}
+</script>
+
+<style scoped>
+  main {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  main::-webkit-scrollbar {
+    display: none;
+  }
+</style>

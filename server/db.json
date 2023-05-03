@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Natalia Gómez",
+      "isRecruiter": true,
+      "subTitle": "ACME Studios",
+      "email": "natalia_gomez@mail.com",
+      "password": "super-secure123",
+      "phoneNumber": 99900066,
+      "profileImageUrl": "https://im.idiva.com/content/2016/Feb/girl_woman_working_career1.jpg",
+      "subscribedToNewsLetter": false
+    },
+    {
+      "id": 2,
+      "name": "Pedro Pascal",
+      "isRecruiter":  true,
+      "organizations": ["JobSync"],
+      "email": "pedroPascal@mail.com",
+      "password": "new-password123",
+      "phoneNumber": 123000321,
+      "profileImageUrl": "https://cdn.britannica.com/41/240741-050-D4777963/Pedro-Pascal-attends-premiere-The-Last-of-US-January-2023.jpg?w=400&h=300&c=crop",
+      "subscribedToNewsLetter": false
+    }
+  ],
+  "recruitments": [
+    {
+      "id": 1,
+      "title": "2023-Business Administration UPC Interniship Program Recruitment",
+      "startDate": "2023/04/12",
+      "recruitmentStatus": "Reviewing Candidates",
+      "jobPostStatus": "Hiring Open 🟢",
+      "organizer": "Jeffrey Ocampos"
+    },
+    {
+      "id": 2,
+      "title": "Staff team for Miraflores shop part-timer recruitment (No CV needed)",
+      "startDate": "2023/02/10",
+      "recruitmentStatus": "Interviewing candidates",
+      "jobPostStatus": "Closed 🔴",
+      "organizer": "Jeffrey Ocampos"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "time": "9:00 - 13:00",
+      "description": "Make new test for software developer"
+    },
+    {
+      "id": 2,
+      "time": "16:00 - 16:30",
+      "description": "Interview Susane Itala"
+    }
+  ]
+}
