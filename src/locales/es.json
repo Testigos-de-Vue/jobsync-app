@@ -43,7 +43,8 @@
       "description": "No te preocupes, ingresa tu email y te enviaremos un link para que puedas recuperarla",
       "send-link": "Enviar link de recuperación",
       "go-back": "Volver a"
-    }
+    },
+    "logout": "Cerrar sesión"
   },
   "greeting": {
     "morning-greeting": "Buenos días, ",

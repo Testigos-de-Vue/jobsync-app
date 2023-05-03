@@ -14,7 +14,8 @@ import Home from "../recruiters/pages/recruiters-home.component.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/login', name: 'Login', component: Login },
+    { path: '/', redirect: '/home'},
+    { path: '/login', name: 'Log In', component: Login },
     { path: '/register', name: 'Register', component: Register },
     { path: '/forgot-password', name: 'Forgot Password', component: ForgotPassword},
     { path: '/recover-password', name: 'Password Recovery', component: PasswordRecovery},

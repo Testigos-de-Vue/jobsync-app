@@ -42,32 +42,21 @@
   
   <script>
   import RecruitmentCard from "../components/recruitment-card.component.vue";
+  import {RecruitmentApiService} from "../services/recruitment.service.js";
   
   export default {
     name: "recruitments",
     components: { RecruitmentCard },
     data() {
-    return {
-      recruitments: [
-        {   
-            id: 1,
-            title: "2023-Business Administration UPC Interniship Program Recruitment",
-            startDate: "2023/04/12",
-            recruitmentStatus: "Reviewing Candidates",
-            jobPostStatus: "Hiring Open 🟢",
-            organizer: "Jeffrey Ocampos"
-        },
-        {
-            id: 2,
-            title: "Staff team for Miraflores shop part-timer recruitment (No CV needed)",
-            startDate: "2023/02/10",
-            recruitmentStatus: "Interviewing candidates",
-            jobPostStatus: "Closed 🔴",
-            organizer: "Jeffrey Ocampos"
-        }
-      ],
-    }
+      return {
+        recruitments: [],
+        recruitmentApi: new RecruitmentApiService()
+      }
     },
+    created() {
+      this.recruitmentApi.getAll()
+        .then(response => this.recruitments = response.data);
+    }
   }
     
   </script>

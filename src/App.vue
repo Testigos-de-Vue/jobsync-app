@@ -10,7 +10,7 @@
       >
         <i class="pi pi-bars" style="font-size: 1.5rem"/>
       </button>
-      <router-link to="/">
+      <router-link to="/home">
         <img
           class="h-14 w-auto"
           src="/jobsync-logo.png"
@@ -36,20 +36,20 @@
 // Dependencies
 import SideBar from "./shared/components/side-bar.component.vue";
 import MobileNavBar from "./shared/components/mobile-nav-bar.component.vue";
+import {AuthApiService} from "./authentication/services/authApiService.js";
 export default {
   components: {MobileNavBar, SideBar},
   data() {
     return {
       visibleMobileBar: false,
       authenticationPaths: new Set(["/login", "/register","/recover-password", "/forgot-password"]),
-      user: {
-        id: 1,
-        name: "Name LastName super largo",
-        profileImageUrl: "https://is3-ssl.mzstatic.com/image/thumb/Purple115/v4/c3/a9/b9/c3a9b968-256b-dea6-e76c-d635f0bb2ee9/source/512x512bb.jpg",
-        isRecruiter: true,
-        subTitle: "ACME Studios"
-      }
+      authApi: new AuthApiService(),
+      user: {}
     }
+  },
+  created() {
+    this.authApi.getUserById(1)
+      .then(response => this.user = response.data);
   },
   methods: {
     isAnAuthenticationPath(path) {
