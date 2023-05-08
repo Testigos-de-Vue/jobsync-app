@@ -88,7 +88,8 @@
   },
   "app-settings": {
     "title": "App Settings",
-    "lang-switcher-label": "Choose your preferred language:"
+    "lang-switcher-label": "Choose your preferred language:",
+    "dark-mode-switcher-label": "Dark Mode:"
   },
   "plans": {
     "free": "Free",
