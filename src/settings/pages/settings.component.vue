@@ -8,17 +8,18 @@
         :label="$t('general.go-back-btn-label')"
         icon="pi pi-arrow-left"
       />
+      <!-- :outlined="!useProfileSettings" -->
       <pv-button
         rounded
-        class="bg-white"
-        :outlined="!useProfileSettings"
+        outlined
         aria-label="Profile Settings"
         :label="$t('settings.profile-btn-label')"
         @click="setProfileSettingsVisible(true)"
       />
+      <!-- :outlined="useProfileSettings" -->
       <pv-button
         rounded
-        :outlined="useProfileSettings"
+        outlined
         aria-label="App Settings"
         :label="$t('settings.app-btn-label')"
         @click="setProfileSettingsVisible(false)"
