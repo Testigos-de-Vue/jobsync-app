@@ -14,6 +14,7 @@
           outlined
           aria-label="Profile Settings"
           :label="$t('settings.profile-btn-label')"
+          class="w-full"
         />
       </router-link>
       <router-link to="/settings/app">
@@ -22,6 +23,7 @@
           outlined
           aria-label="App Settings"
           :label="$t('settings.app-btn-label')"
+          class="w-full"
         />
       </router-link>
     </div>
