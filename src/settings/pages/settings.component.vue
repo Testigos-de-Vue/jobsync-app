@@ -10,6 +10,7 @@
       />
       <pv-button
         rounded
+        class="bg-white"
         :outlined="!useProfileSettings"
         aria-label="Profile Settings"
         :label="$t('settings.profile-btn-label')"

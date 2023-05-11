@@ -6,18 +6,23 @@
       <p class="text-xl font-semibold">{{ $t('app-settings.lang-switcher-label') }}</p>
       <language-switcher />
     </div>
+    <div class="flex flex-col justify-center items-start gap-6">
+      <p class="text-xl font-semibold">{{ $t('app-settings.theme-switcher-label') }}</p>
+      <theme-switcher />
+    </div>
   </div>
 </template>
 
 <script>
 import LanguageSwitcher from "./language-switcher.component.vue";
+import ThemeSwitcher from "./theme-switcher.component.vue";
 
 export default {
   name: "app-settings-form",
-  components: {LanguageSwitcher}
+  components: {ThemeSwitcher, LanguageSwitcher}
 }
 </script>
 
 <style scoped>
-
+  
 </style>
