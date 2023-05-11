@@ -2,15 +2,16 @@
   <div class="text-center mb-6">
     <greeting/>
   </div>
-  <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
-    <div class="flex justify-center mb-7">
-      <calendar/>
+  <div class="grid grid-rows-2 md:grid-cols-2">
+    <div class="flex justify-center">
+      <div>
+        <calendar/>
+      </div>
     </div>
-    <div>
+    <div class="flex-shrink-0">
       <schedule/>
     </div>
   </div>
-
 </template>
 
 <script>
