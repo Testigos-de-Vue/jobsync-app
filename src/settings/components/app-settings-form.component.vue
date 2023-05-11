@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col bg-white dark:bg-slate-700 rounded-xl shadow-lg gap-4 p-8">
+  <div class="flex flex-col bg-white dark:bg-black rounded-xl shadow-lg gap-4 p-8">
     <p class="text-3xl text-center font-bold">{{ $t('app-settings.title') }}</p>
     <hr class="mb-4">
     <div class="flex flex-wrap items-center gap-6">

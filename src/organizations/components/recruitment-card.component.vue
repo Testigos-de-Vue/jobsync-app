@@ -1,12 +1,12 @@
 <template>
     <pv-card rounded>
         <template #title>
-            <h1 class="font-semibold text-black">{{ recruitment.title }}</h1>
+            <h1 class="font-semibold">{{ recruitment.title }}</h1>
         </template>
         <template #content>
             <ul>
                 <li>
-                    <span class="font-semibold text-black">{{ $t('recruitment-card.start-date-label') }}: </span>
+                    <span class="font-semibold">{{ $t('recruitment-card.start-date-label') }}: </span>
                     {{ recruitment.startDate }}
                 </li>
                 <li>

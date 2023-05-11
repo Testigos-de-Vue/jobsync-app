@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col bg-white rounded-xl shadow-lg gap-4 p-8">
+  <div class="flex flex-col bg-white dark:bg-black rounded-xl shadow-lg gap-4 p-8">
     <p class="text-3xl text-center font-bold">{{ $t('profile-settings.title') }}</p>
     <hr class="mb-4">
     <form class="flex flex-col justify-center items-center gap-4">
@@ -56,11 +56,11 @@
           <pv-checkbox v-model="user.subscribedToNewsLetter" inputId="agree-to-privacy-policy" name="agree-to-privacy-policy" value="Agree" />
           <label for="agree-to-privacy-policy" class="ml-2">
             {{ $t('auth.agree-privacy-policy') }}
-            <a :href="$t('link.terms-of-service')" target="_blank" class="text-primary dark:text-primary-dark hover:font-medium">{{ $t('auth.privacy-policy') }}</a>
+            <a :href="$t('link.terms-of-service')" target="_blank" class="text-primary dark:text-primary hover:font-medium">{{ $t('auth.privacy-policy') }}</a>
           </label>
         </div>
       </div>
-      <pv-button type="submit" class="w-full" :label="$t('auth.save-changes')" />
+      <pv-button type="submit" class="w-full" :label="$t('auth.save-changes')" outlined />
     </form>
     <form class="flex flex-col gap-4 pt-8">
       <div>
@@ -77,7 +77,7 @@
           <pv-input id="confirm-new-password" type="password" v-model="confirmNewPassword" :label="password" class="w-full" />
         </div>
       </div>
-      <pv-button type="submit" class="w-full" :label="$t('auth.change-password')" />
+      <pv-button type="submit" class="w-full" :label="$t('auth.change-password')" outlined />
     </form>
   </div>
 </template>
