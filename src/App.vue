@@ -1,7 +1,8 @@
 <template>
   <div
-    class="h-screen grid grid-rows-[auto_1fr] md:grid-rows-1 md:place-items-center bg-tertiary"
-    :class="{ ['md:grid-cols-[auto_1fr]']: !this.isAnAuthenticationPath($route.path) }">
+    class="h-screen bg-gray-50 dark:bg-slate-900 grid grid-rows-[auto_1fr] md:grid-rows-1 md:place-items-center"
+    :class="{'md:grid-cols-[auto_1fr]': !isAnAuthenticationPath($route.path)}"
+  >
     <header class="flex relative md:hidden justify-center items-center bg-white p-4">
       <button
         class="p-2 absolute left-4"
@@ -37,6 +38,7 @@
 import SideBar from "./shared/components/side-bar.component.vue";
 import MobileNavBar from "./shared/components/mobile-nav-bar.component.vue";
 import {AuthApiService} from "./authentication/services/authApiService.js";
+import {useThemeStore} from "./settings/stores/app-theme.store.js";
 export default {
   components: {MobileNavBar, SideBar},
   data() {
@@ -50,6 +52,21 @@ export default {
   created() {
     this.authApi.getUserById(1)
       .then(response => this.user = response.data);
+  },
+  computed: {
+    theme() {
+      return useThemeStore().theme;
+    },
+  },
+  watch: {
+    theme(newTheme, oldTheme) {
+      const store = useThemeStore();
+      store.setTheme(newTheme);
+    },
+  },
+  mounted() {
+    const store = useThemeStore();
+    store.initTheme();
   },
   methods: {
     isAnAuthenticationPath(path) {

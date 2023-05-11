@@ -80,7 +80,11 @@
   },
   "settings": {
     "profile-btn-label": "Configurar perfil",
-    "app-btn-label": "Configurar aplicación"
+    "app-btn-label": "Configurar aplicación",
+    "theme": {
+      "light": "Claro",
+      "dark": "Oscuro"
+    }
   },
   "profile-settings": {
     "title": "Configuración del Perfil",
@@ -88,7 +92,8 @@
   },
   "app-settings": {
     "title": "Configuración de la Aplicación",
-    "lang-switcher-label": "Elige tu idioma preferido:"
+    "lang-switcher-label": "Elige tu idioma preferido:",
+    "theme-switcher-label": "Selecciona un tema para la aplicación:"
   },
   "plans": {
     "free": "Free",
