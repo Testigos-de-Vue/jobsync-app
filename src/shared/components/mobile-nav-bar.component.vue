@@ -3,6 +3,7 @@
     v-bind:visible="visible"
     v-on:update:visible="closeNavBar"
     position="full"
+    class="dark:bg-slate-900 dark:text-white"
   >
     <nav>
       <ul v-if="user">

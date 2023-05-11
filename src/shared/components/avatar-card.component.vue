@@ -5,7 +5,7 @@
       :src="user.profileImageUrl"
       :alt="`${user.name} profile picture`"
     >
-    <div class="text-white">
+    <div class="dark:text-white">
       <p class="text-xl font-bold">{{ user.name }}</p>
       <p>{{ user.subTitle }}</p>
     </div>
