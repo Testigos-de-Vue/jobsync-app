@@ -20,7 +20,7 @@ export default {
           DEFAULT: "#f5f9ff",
           dark: "#cdd9e1",
         },
-        black: "#161d21",
+        black: "#161d21"
       },
     },
   },

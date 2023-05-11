@@ -1,5 +1,8 @@
 <template>
-  <div class="bg-white shadow-xl rounded px-8 pt-6 pb-8">
+  <div class="fixed top-4 left-4 p-4 hidden md:block">
+    <img class="h-12 w-auto" src="/public/jobsync-icon.png " alt="JobSync Icon">
+  </div>
+  <div class="bg-white dark:bg-black shadow-xl rounded px-8 pt-6 pb-8">
     <div class="flex flex-col space-y-6">
       <div class="flex justify-center">
         <img class="h-8 w-auto" src="/jobsync-logo.png" alt="JobSync Logo">
@@ -72,7 +75,7 @@
               <a :href="$t('link.terms-of-service')" target="_blank" class="text-primary hover:font-medium">{{ $t('auth.privacy-policy') }}</a>
           </label>
         </div>
-        <pv-button class="w-full text-center" type="submit" label="Sign Up" />
+        <pv-button type="submit" label="Sign Up" outlined/>
         <p class="text-center my-4">Already have an account? <router-link class="hover:font-medium text-primary" to="/login">Log In</router-link></p>
       </form>
     </div>
