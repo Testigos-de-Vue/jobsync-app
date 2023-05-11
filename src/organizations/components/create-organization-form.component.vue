@@ -1,5 +1,5 @@
 <template>
-  <form class="flex flex-col bg-white rounded-xl shadow-lg gap-4 p-8">
+  <form class="flex flex-col bg-white dark:bg-black rounded-xl shadow-lg gap-4 p-8">
     <p class="text-3xl text-center font-bold">{{ $t('create-org.title') }}</p>
     <div class="flex flex-col items-center gap-4 py-8">
       <img
@@ -77,7 +77,7 @@
       <pv-input class="w-full" :placeholder="$t('create-org.address-placeholder')" required v-model="companyAddress" />
     </div>
     <pv-message severity="info" :closable="false">{{ $t('create-org.add-members-msg') }}</pv-message>
-    <pv-button class="w-full text-center" type="submit" :label="$t('create-org.create-organization')" />
+    <pv-button type="submit" outlined :label="$t('create-org.create-organization')"/>
   </form>
 </template>
 

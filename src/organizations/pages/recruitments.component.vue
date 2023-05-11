@@ -10,18 +10,21 @@
         />
         <pv-button
             rounded
+            outlined
             aria-label="Create Recruitment"
             :label="$t('organization-profile.new-recruitment-btn-label')"
             @click=""
         />
         <pv-button
             rounded
+            outlined
             aria-label="Recruitments History"
             :label="$t('organization-profile.past-recruitment-btn-label')"
             @click=""
         />
         <pv-button
             rounded
+            outlined
             aria-label="Candidates History"
             :label="$t('organization-profile.past-candidates-btn-label')"
             @click=""
