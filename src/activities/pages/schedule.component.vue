@@ -1,6 +1,6 @@
 <template>
     <div class="rounded-lg shadow-md">
-        <div class="bg-blue-500 rounded-t-lg h-20 flex justify-center items-center">
+        <div class="bg-primary dark:bg-primary-dark rounded-t-lg h-20 flex justify-center items-center">
             <img
                 class="h-10 w-10 float-left mr-4"
                 src="/public/task-list-icon.svg"
@@ -8,7 +8,7 @@
             >
             <h1 class="text-white text-2xl font-bold">{{ $t('activities.schedule-title') }}</h1>
         </div>
-        <div class="my-4">
+        <div>
             <pending-task-card
             v-for="task in tasks" 
             :key="task.id"

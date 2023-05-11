@@ -8,7 +8,7 @@ import PrimeVue from "primevue/config";
 import 'primevue/resources/primevue.min.css';
 
 // App Theme
-import 'primevue/resources/themes/viva-light/theme.css';
+// import 'primevue/resources/themes/viva-light/theme.css';
 
 // Router
 import router from "./router/index.js";
@@ -24,6 +24,7 @@ import FileUpload from "primevue/fileupload";
 import Message from "primevue/message";
 import Card from "primevue/card";
 import Calendar from 'primevue/calendar'
+import InputSwitch from 'primevue/inputswitch';
 import {createPinia} from "pinia";
 
 // Pinia
@@ -43,4 +44,5 @@ createApp(App)
   .component('pv-button', Button)
   .component('pv-card', Card)
   .component('pv-calendar', Calendar)
+  .component('pv-inputswitch', InputSwitch)
   .mount('#app')

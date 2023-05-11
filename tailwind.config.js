@@ -6,12 +6,22 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      darkMode: "class",
       colors: {
-        primary: "#3066be",
-        secondary: "#00c9a7",
-        tertiary: "#f5f9ff",
-        black: "#313131",
-      }
+        primary: {
+          DEFAULT: "#3066be",
+          dark: "#1d3b56",
+        },
+        secondary: {
+          DEFAULT: "#00c9a7",
+          dark: "#008272",
+        },
+        tertiary: {
+          DEFAULT: "#f5f9ff",
+          dark: "#cdd9e1",
+        },
+        black: "#161d21",
+      },
     },
   },
   plugins: [],
