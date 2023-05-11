@@ -56,7 +56,7 @@
           <pv-checkbox v-model="user.subscribedToNewsLetter" inputId="agree-to-privacy-policy" name="agree-to-privacy-policy" value="Agree" />
           <label for="agree-to-privacy-policy" class="ml-2">
             {{ $t('auth.agree-privacy-policy') }}
-            <a :href="$t('link.terms-of-service')" target="_blank" class="text-primary hover:font-medium">{{ $t('auth.privacy-policy') }}</a>
+            <a :href="$t('link.terms-of-service')" target="_blank" class="text-primary dark:text-primary-dark hover:font-medium">{{ $t('auth.privacy-policy') }}</a>
           </label>
         </div>
       </div>
