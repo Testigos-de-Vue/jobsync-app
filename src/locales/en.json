@@ -80,7 +80,11 @@
   },
   "settings": {
     "profile-btn-label": "Profile Settings",
-    "app-btn-label": "App Settings"
+    "app-btn-label": "App Settings",
+    "theme": {
+      "light": "Light",
+      "dark": "Dark"
+    }
   },
   "profile-settings": {
     "title": "Profile Settings",
@@ -89,7 +93,7 @@
   "app-settings": {
     "title": "App Settings",
     "lang-switcher-label": "Choose your preferred language:",
-    "dark-mode-switcher-label": "Dark Mode:"
+    "theme-switcher-label": "Select an app theme:"
   },
   "plans": {
     "free": "Free",
