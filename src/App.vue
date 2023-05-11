@@ -3,13 +3,13 @@
     class="h-screen bg-gray-50 dark:bg-slate-900 grid grid-rows-[auto_1fr] md:grid-rows-1 md:place-items-center"
     :class="{'md:grid-cols-[auto_1fr]': !isAnAuthenticationPath($route.path)}"
   >
-    <header class="flex relative md:hidden justify-center items-center bg-white p-4">
+    <header class="flex relative md:hidden justify-center items-center bg-white dark:bg-tertiary-dark p-4">
       <button
         class="p-2 absolute left-4"
         aria-label="Toggle navigation menu"
         @click="toggleBottomBar"
       >
-        <i class="pi pi-bars" style="font-size: 1.5rem"/>
+        <i class="pi pi-bars text-black" style="font-size: 1.5rem"/>
       </button>
       <router-link to="/home">
         <img
