@@ -1,7 +1,5 @@
 <template>
-  <div class="card flex justify-content-center ">
-    <pv-calendar v-model="date" inline showWeek />
-  </div>
+  <pv-calendar v-model="date" inline showWeek />
 </template>
 
 <script>
