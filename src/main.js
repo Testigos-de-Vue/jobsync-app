@@ -25,6 +25,9 @@ import Message from "primevue/message";
 import Card from "primevue/card";
 import Calendar from 'primevue/calendar'
 import InputSwitch from 'primevue/inputswitch';
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
+
 import {createPinia} from "pinia";
 
 // Pinia
@@ -45,4 +48,6 @@ createApp(App)
   .component('pv-card', Card)
   .component('pv-calendar', Calendar)
   .component('pv-inputswitch', InputSwitch)
+  .component('pv-data-table', DataTable)
+  .component('pv-column', Column)
   .mount('#app')

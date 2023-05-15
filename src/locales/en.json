@@ -67,7 +67,15 @@
   "organization-profile": {
     "new-recruitment-btn-label": "Create Recruitment",
     "past-recruitment-btn-label": "Recruitments History",
-    "past-candidates-btn-label": "Candidates History"
+    "past-candidates-btn-label": "Candidates History",
+    "organization-settings-label": "Organization Settings",
+    "members-table": {
+        "members-title": "Organization members",
+        "name-header": "Member",
+        "avatar-header": "Profile Picture",
+        "role-header": "Role",
+        "phone-header": "Phone Number"
+    }
   },
   "recruitment-card": {
     "start-date-label": "Start Date",

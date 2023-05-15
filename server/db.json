@@ -23,6 +23,23 @@
       "subscribedToNewsLetter": false
     }
   ],
+  "organizations": [
+    {
+      "id": 1,
+      "name": "Testigos de Vue",
+      "avatarUrl": "https://i.imgur.com/Oco9isG.png" ,
+      "members": [
+        {
+          "memberId": 1,
+          "role": "Admin"
+        },
+        {
+          "memberId": 2,
+          "role": "Recruiter"
+        }
+      ]
+    }
+  ],
   "recruitments": [
     {
       "id": 1,

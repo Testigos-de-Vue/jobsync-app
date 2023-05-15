@@ -83,7 +83,7 @@
 </template>
 
 <script>
-import {CountriesApiService} from "../../shared/services/countries/countries.service.js";
+import {CountriesApiService} from "../../shared/services/countries.service.js";
 export default {
   name: "register-form",
   data() {
