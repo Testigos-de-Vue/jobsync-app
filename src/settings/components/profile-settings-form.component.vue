@@ -83,7 +83,7 @@
 </template>
 
 <script>
-import {CountriesApiService} from "../../shared/services/countries/countries.service.js";
+import {CountriesApiService} from "../../shared/services/countries.service.js";
 import {AuthApiService} from "../../authentication/services/authApiService.js";
 
 export default {
