@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-[auto_1fr]">
+  <div class="grid grid-cols-1 lg:grid-cols-[auto_1fr]">
     <div class="flex flex-col gap-4">
       <pv-button
         rounded
@@ -8,7 +8,7 @@
         :label="$t('general.go-back-btn-label')"
         icon="pi pi-arrow-left"
       />
-      <router-link to="/settings">
+      <router-link to="/settings/profile">
         <pv-button
           rounded
           outlined
@@ -27,10 +27,9 @@
         />
       </router-link>
     </div>
-    <div class="flex justify-center items-center h-full">
-      <div class="w-full max-w-xl py-4">
-        <router-view></router-view> 
-        <router-view name="child"></router-view>
+    <div class="flex justify-center items-center h-full px-4">
+      <div class="w-full lg:max-w-lg xl:max-w-xl py-4">
+        <router-view />
       </div>
     </div>
   </div>

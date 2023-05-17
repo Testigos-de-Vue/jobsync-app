@@ -20,7 +20,8 @@ const router = createRouter({
     { path: '/login', name: 'Log In', component: Login },
     { path: '/settings', name: 'Settings', component: Settings,
       children: [
-        { path: '', name: 'Profile Settings', component: ProfileSettingsForm },
+        { path: '', redirect: '/settings/profile', component: ProfileSettingsForm },
+        { path: 'profile', name: 'Profile Settings', component: ProfileSettingsForm },
         { path: 'app', name: 'App Settings', component: AppSettingsForm }
       ]
     },

@@ -2,7 +2,11 @@
   <div class="flex flex-col justify-center items-center gap-2">
     <button
       class="rounded-full w-24 h-24 p-1"
-      :class="[themeName === this.themeId ? 'border-2 border-black' : 'border hover:border-2 border-gray-500']"
+      :class="[
+        themeName === this.themeId
+          ? 'border-2 border-black dark:border-white'
+          : 'border hover:border-2 border-gray-500'
+      ]"
       @click="changeTheme(this.themeId)"
     >
       <div :class="classTheme" class='w-full h-full rounded-full' />

@@ -22,7 +22,7 @@
     <aside v-if="!isAnAuthenticationPath($route.path)" class="hidden md:flex p-8 h-full">
       <side-bar v-bind:user="user" />
     </aside>
-    <main class="p-8 container h-full">
+    <main class="p-8 w-full h-full">
       <router-view />
     </main>
   </div>
