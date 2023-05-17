@@ -9,7 +9,7 @@
       >
         <i class="pi pi-arrow-left mr-2" />{{ $t('general.go-back-btn-label')}}
       </pv-button>
-      <div class="flex space-x-4 justify-center items-center">
+      <div class="flex space-x-4 justify-center items-center py-4">
         <div>
           <img 
           :src="currentOrganization.avatarUrl" 
