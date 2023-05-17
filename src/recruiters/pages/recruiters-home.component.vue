@@ -2,15 +2,9 @@
   <div class="text-center mb-6">
     <greeting/>
   </div>
-  <div class="grid grid-rows-2 md:grid-cols-2">
-    <div class="flex justify-center">
-      <div>
-        <calendar/>
-      </div>
-    </div>
-    <div class="flex-shrink-0">
-      <schedule/>
-    </div>
+  <div class="grid grid-rows-[auto_1fr] grid-cols-1 xl:grid-cols-2 xl:grid-rows-1 gap-2 lg:gap-4">
+    <calendar />
+    <schedule />
   </div>
 </template>
 
