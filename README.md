@@ -5,7 +5,7 @@
   </a>
   <h3 align="center">JobSync App</h3>
   <p align="center">
-    JobSync is the applicant tracking system made for all types of companies. With modern features optimized for you and your candidates, you will get everything       you need to recruit successfully.
+    JobSync is the applicant tracking system made for all types of companies. With modern features optimized for you and your candidates, you will get everything you need to recruit successfully.
     <br />
     <a href="https://github.com/Testigos-de-Vue/jobsync-app"><strong>Explore the project documentation »</strong></a>
     <br />
@@ -43,7 +43,7 @@
 
 <div align="center">
   <a href="https://github.com/Testigos-de-Vue/jobsync-app" target="_blank">
-    <img src="https://i.imgur.com/qZMwEAH.png" alt="Preview Web Aplication" width="auto" height="500">
+    <img src="https://i.imgur.com/qZMwEAH.png" alt="Preview Web Aplication" style="height:auto; width:1280px;">
   </a>
 </div>
 
