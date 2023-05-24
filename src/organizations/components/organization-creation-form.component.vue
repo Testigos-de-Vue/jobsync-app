@@ -3,7 +3,7 @@
     <p class="text-3xl text-center font-bold">{{ $t('create-org.title') }}</p>
     <div class="flex flex-col items-center gap-4 py-8">
       <img
-        :src="previewImage ?? 'organization-placeholder.png'"
+        :src="previewImage ?? '/organization-placeholder.png'"
         alt="Organization preview image"
         class="h-44 w-44 object-cover rounded-full border-2 border-black p-3"
       >
@@ -85,7 +85,7 @@
 import {CountriesApiService} from "../../shared/services/countries.service.js";
 
 export default {
-  name: "create-organization-form",
+  name: "organization-creation-form",
   data() {
     return {
       reader: new FileReader(),
