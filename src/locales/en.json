@@ -9,12 +9,14 @@
     "settings": "Settings",
     "switch-team": "Switch Team",
     "login": "Log In",
-    "sign-up": "Sign Up"
+    "sign-up": "Register"
   },
   "auth": {
+    "candidate": "Candidate",
+    "recruiter": "Recruiter",
     "name": "Name",
     "sign-title": "Sign In",
-    "sign-up-title": "Sign Up",
+    "sign-up-title": "Register",
     "e-mail": "E-mail",
     "password": "Password",
     "confirm-password": "Confirm Password",
@@ -31,7 +33,8 @@
     "login": "Log In",
     "forgot-password": "Forgot Password?",
     "account-question": "No account?",
-    "sign-up": "Sign up",
+    "have-account-question": "Already have an account? ",
+    "sign-up": "Register",
     "password-recovery": {
       "title": "Password Recovery",
       "enter-new-password": "Enter new password",

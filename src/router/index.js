@@ -18,6 +18,7 @@ const router = createRouter({
   routes: [
     { path: '/', redirect: '/home'},
     { path: '/login', name: 'Log In', component: Login },
+    { path: '/register', name: 'Register', component: Register },
     { path: '/settings', name: 'Settings', component: Settings,
       children: [
         { path: '', redirect: '/settings/profile', component: ProfileSettingsForm },
