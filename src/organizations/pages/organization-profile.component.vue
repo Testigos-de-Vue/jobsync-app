@@ -19,7 +19,7 @@
         <div class="space-y-2">
           <div>
             <h1 class="text-primary font-medium text-xl">Working on</h1>
-            <p class="text-black font-bold text-3xl">{{ currentOrganization.name }}</p>
+            <p class="font-bold text-3xl">{{ currentOrganization.name }}</p>
           </div>
           <pv-button
             rounded
@@ -38,7 +38,7 @@
   </template>
   
   <script>
-  import { OrganizationApiService } from "../services/organizations.service.js"
+  import { OrganizationApiService } from "../../shared/services/organizations.service.js"
   import { UsersApiService } from  "../../shared/services/users.service.js"
   import MembersTable from "../components/organization-members-table.component.vue"
 
