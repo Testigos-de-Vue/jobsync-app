@@ -48,7 +48,7 @@
   import {RecruitmentApiService} from "../services/recruitment.service.js";
   
   export default {
-    name: "recruitments",
+    name: "organization-recruitments",
     components: { RecruitmentCard },
     data() {
       return {

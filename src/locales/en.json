@@ -53,6 +53,9 @@
     "morning-greeting": "Good Morning, ",
     "start-greeting": "Let's Start!"
   },
+  "organization-selection": {
+    "choose-title": "Choose your organization to work with or"
+  },
   "create-org": {
     "title": "Create an organization",
     "choose-picture": "Choose a picture",
