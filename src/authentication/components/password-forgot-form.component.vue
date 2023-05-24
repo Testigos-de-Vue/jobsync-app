@@ -36,7 +36,7 @@
 
 <script>
 export default {
-    name: "forgot-password-form"
+    name: "password-forgot-form"
 }
 </script>
 
