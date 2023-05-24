@@ -44,7 +44,7 @@ export default {
   data() {
     return {
       visibleMobileBar: false,
-      authenticationPaths: new Set(["/login", "/register","/recover-password", "/forgot-password"]),
+      authenticationPaths: new Set(["/login", "/register","/password-recovery", "/password-forgot"]),
       authApi: new AuthApiService(),
       user: {}
     }

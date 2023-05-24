@@ -1,17 +1,17 @@
 <template>
     <div class="flex justify-center items-center h-full">
       <div class="w-full max-w-xl">
-        <forgot-password-form/>
+        <password-forgot-form/>
       </div>
     </div>
 </template>
   
 <script>
-import ForgotPasswordForm from "../components/forgot-password-form.component.vue";
+import PasswordForgotForm from "../components/password-forgot-form.component.vue";
 
 export default {
-  name: "forgot-password",
-  components: {ForgotPasswordForm}
+  name: "password-forgot",
+  components: {PasswordForgotForm}
 }
 </script>
 

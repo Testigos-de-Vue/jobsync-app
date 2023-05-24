@@ -1,17 +1,17 @@
 <template>
   <div class="flex justify-center items-center h-full">
     <div class="w-full max-w-xl">
-      <recover-password-form/>
+      <password-recovery-form/>
     </div>
   </div>
 </template>
 
 <script>
-import RecoverPasswordForm from "../components/recover-password-form.component.vue";
+import PasswordRecoveryForm from "../components/password-recovery-form.component.vue";
 
 export default {
-  name: "recover-password",
-  components: {RecoverPasswordForm}
+  name: "password-recovery",
+  components: {PasswordRecoveryForm}
 }
 </script>
 
