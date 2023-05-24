@@ -43,7 +43,7 @@
   import MembersTable from "../components/organization-members-table.component.vue"
 
   export default {
-    name: "organization",
+    name: "organization-profile",
     components: { MembersTable },
     data(){
       return {
