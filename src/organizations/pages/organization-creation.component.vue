@@ -10,18 +10,18 @@
     </pv-button>
     <div class="flex justify-center items-center h-full">
       <div class="w-full max-w-xl py-4">
-        <create-organization-form />
+        <organization-creation-form />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import CreateOrganizationForm from "../components/create-organization-form.component.vue";
+import OrganizationCreationForm from "../components/organization-creation-form.component.vue";
 
 export default {
-  name: "create-organization",
-  components: {CreateOrganizationForm},
+  name: "organization-creation",
+  components: {OrganizationCreationForm},
 }
 </script>
 

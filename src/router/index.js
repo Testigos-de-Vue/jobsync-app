@@ -6,7 +6,7 @@ import Register from "../authentication/pages/register.component.vue";
 import PasswordRecovery from "../authentication/pages/password-recovery.component.vue";
 import PasswordForgot from "../authentication/pages/password-forgot.component.vue";
 import Organization from "../organizations/pages/organization-profile.component.vue";
-import CreateOrganization from "../organizations/pages/create-organization.component.vue";
+import OrganizationCreation from "../organizations/pages/organization-creation.component.vue";
 import Settings from "../settings/pages/settings.component.vue";
 import ProfileSettingsForm from "../settings/components/profile-settings-form.component.vue";
 import AppSettingsForm from "../settings/components/app-settings-form.component.vue";
@@ -29,7 +29,7 @@ const router = createRouter({
     { path: '/password-forgot', name: 'Password Forgot ', component: PasswordForgot},
     { path: '/password-recovery', name: 'Password Recovery', component: PasswordRecovery},
     { path: '/organization', name: 'Organization', component: Organization },
-    { path: '/create-organization', name: 'Create Organization', component: CreateOrganization },
+    { path: '/organizations/create', name: 'Organization Creation', component: OrganizationCreation },
     { path: '/recruitments', name: 'Recruitments', component: Recruitments },
     { path: '/home', name: 'Home', component: Home},
   ]

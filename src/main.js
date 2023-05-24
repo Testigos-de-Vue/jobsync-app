@@ -7,9 +7,6 @@ import i18n from "./i18n.js";
 import PrimeVue from "primevue/config";
 import 'primevue/resources/primevue.min.css';
 
-// App Theme
-// import 'primevue/resources/themes/viva-light/theme.css';
-
 // Router
 import router from "./router/index.js";
 
