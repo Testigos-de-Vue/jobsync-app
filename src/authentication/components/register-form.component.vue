@@ -17,7 +17,7 @@
           :class="[isCandidate ? 'bg-primary text-white' : 'border-2 border-primary text-primary']"
           @click="setIsCandidate(true)"
         >
-          Candidate
+          {{ $t('auth.candidate') }}
         </button>
         <button
           aria-label="Activate recruiter form"
@@ -25,7 +25,7 @@
           :class="[!isCandidate ? 'bg-primary text-white' : 'border-2 border-primary text-primary']"
           @click="setIsCandidate(false)"
         >
-          Recruiter
+          {{ $t('auth.recruiter') }}
         </button>
       </div>
       <form class="flex flex-col space-y-3">
@@ -75,8 +75,8 @@
               <a :href="$t('link.terms-of-service')" target="_blank" class="text-primary hover:font-medium">{{ $t('auth.privacy-policy') }}</a>
           </label>
         </div>
-        <pv-button type="submit" label="Sign Up" outlined/>
-        <p class="text-center my-4">Already have an account? <router-link class="hover:font-medium text-primary" to="/login">Log In</router-link></p>
+        <pv-button type="submit" :label="$t('auth.sign-up')" outlined/>
+        <p class="text-center my-4">{{ $t('auth.have-account-question') }}<router-link class="hover:font-medium text-primary" to="/login">{{ $t('auth.sign-title') }}</router-link></p>
       </form>
     </div>
   </div>

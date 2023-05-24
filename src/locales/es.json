@@ -12,6 +12,8 @@
     "sign-up": "Registrarse"
   },
   "auth": {
+    "candidate": "Candidato",
+    "recruiter": "Reclutador",
     "name": "Nombre",
     "sign-title": "Inicio de sesión",
     "sign-up-title": "Registro",
@@ -28,9 +30,10 @@
     "agree-privacy-policy": "He leído y acepto las",
     "privacy-policy": "Políticas de Privacidad",
     "save-changes": "Guardar cambios",
-    "login": "Inicio de sesióm",
+    "login": "Inicio de sesión",
     "forgot-password": "¿Te olvidaste la contraseña?",
     "account-question": "¿Aún no tienes cuenta?",
+    "have-account-question": "¿Ya tienes una cuenta? ",
     "sign-up": "Registrarme",
     "password-recovery": {
       "title": "Recuperación de contraseña",
