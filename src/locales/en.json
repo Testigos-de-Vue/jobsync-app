@@ -8,7 +8,7 @@
     "organization": "Organization",
     "settings": "Settings",
     "switch-team": "Switch Team",
-    "login": "Log In",
+    "login": "Sign In",
     "sign-up": "Register"
   },
   "auth": {
@@ -30,7 +30,7 @@
     "agree-privacy-policy": "I have read and agree to the",
     "privacy-policy": "Privacy Policy",
     "save-changes": "Save changes",
-    "login": "Log In",
+    "login": "Sign In",
     "forgot-password": "Forgot Password?",
     "account-question": "No account?",
     "have-account-question": "Already have an account? ",

@@ -22,7 +22,7 @@
         </label>
         <pv-input id="password" class="w-full" v-model="password" type="password" placeholder="••••••••••••" />
       </div>
-      <pv-button type="submit" label="Log In" outlined />
+      <pv-button type="submit" :label="$t('auth.login')" outlined />
       <div class="grid place-items-center">
         <p class="text-primary">
           <router-link to="/forgot-password" class="hover:font-medium">{{ $t('auth.forgot-password') }}</router-link>
