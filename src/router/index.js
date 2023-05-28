@@ -17,6 +17,7 @@ import OrganizationProfile from "../organizations/pages/organization-profile.com
 import OrganizationCreation from "../organizations/pages/organization-creation.component.vue";
 import TeamSelection from "../recruiters/pages/team-selection.component.vue";
 import RecruitersHome from "../recruiters/pages/recruiters-home.component.vue";
+import PageNotFoundComponent from "../shared/pages/page-not-found.component.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -43,7 +44,7 @@ const router = createRouter({
     { path: '/recover-password', name: 'Password Recovery', component: PasswordRecovery},
     { path: '/profile', name: 'Organization', component: OrganizationProfile },
     { path: '/recruitments', name: 'Recruitments', component: OrganizationRecruitments },
-
+    { path: '/:pathMatch(.*)*', name: 'Error 404', component: PageNotFoundComponent },
     { path: '/', redirect: '/organizations/home'},
   ]
 });
