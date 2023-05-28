@@ -50,6 +50,7 @@ export default {
     }
   },
   created() {
+    this.$i18n.locale = localStorage.getItem("preferred-language") ?? "en";
     this.authApi.getUserById(1)
       .then(response => this.user = response.data);
   },
