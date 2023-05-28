@@ -1,6 +1,5 @@
 <template>
   <pv-dropdown
-    class=""
     v-model="locale"
     :options="languages"
   />
@@ -12,11 +11,15 @@ export default {
   data() {
     return {
       languages: ['English', 'Español'],
-      locale: this.getCurrentLanguage()
+      locale: null
     }
+  },
+  created() {
+    this.locale = this.getCurrentLanguage();
   },
   methods: {
     getCurrentLanguage() {
+      this.$i18n.locale = localStorage.getItem("preferred-language") ?? "en";
       switch(this.$i18n.locale) {
         case 'en': return 'English';
         case 'es': return 'Español';
@@ -27,6 +30,7 @@ export default {
   watch: {
     locale(selectedLanguage) {
       this.$i18n.locale = selectedLanguage.slice(0, 2).toLowerCase();
+      localStorage.setItem("preferred-language", this.$i18n.locale);
     }
   }
 }
