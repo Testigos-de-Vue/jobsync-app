@@ -60,7 +60,7 @@ export default {
     },
   },
   watch: {
-    theme(newTheme, oldTheme) {
+    theme(newTheme) {
       const store = useThemeStore();
       store.setTheme(newTheme);
     },
