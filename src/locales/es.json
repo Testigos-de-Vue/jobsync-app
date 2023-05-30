@@ -8,6 +8,7 @@
     "organization": "Organización",
     "settings": "Configuración",
     "switch-team": "Cambiar Equipo",
+    "create-organization" : "Crear organización",
     "login": "Iniciar Sesión",
     "sign-up": "Registrarse"
   },
@@ -52,9 +53,6 @@
   "greeting": {
     "morning-greeting": "Buenos días, ",
     "start-greeting": "¡Empecemos!"
-  },
-  "organization-selection": {
-    "choose-title": "Escoge una organización para trabajar o"
   },
   "create-org": {
     "title": "Crea una organización",
