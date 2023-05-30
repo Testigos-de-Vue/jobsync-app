@@ -27,7 +27,7 @@
       </button>
     </div>
     <router-link to="/organizations/create" @click="menuVisible = false">
-      <div class="bg-slate-200 dark:hover:bg-slate-700 hover:bg-opacity-70 duration-300 w-full px-2 py-2 rounded-lg">
+      <div class="bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-500 hover:bg-opacity-70 duration-300 w-full px-2 py-2 rounded-lg">
         <h2  class="flex justify-center gap-2 items-center">
           <i class="pi pi-plus"></i>
           {{ $t('navbar.create-organization')}}
@@ -56,9 +56,8 @@ export default {
     });
   },
   methods: {
-    switchOrganization(event) {
+    switchOrganization() {
       this.menuVisible = false;
-
     },
   },
 };
