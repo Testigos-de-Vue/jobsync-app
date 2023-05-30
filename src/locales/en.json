@@ -87,6 +87,15 @@
     "job-post-status-label": "Job Post Status",
     "organizer-label": "Organizer"
   },
+  "recruitment": {
+    "dashboard": {
+      "add-phase-lbl": "Add phase",
+      "add-candidates-lbl": "Add candidates",
+      "recruitment-settings-lbl": "Settings",
+      "candidates-counter": " Candidates",
+      "phases-counter": " Phases"
+    }
+  },
   "activities": {
     "schedule-title": "Today's Schedule"
   },

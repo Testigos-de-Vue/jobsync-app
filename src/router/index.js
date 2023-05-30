@@ -10,11 +10,12 @@ import Settings from "../settings/pages/settings.component.vue";
 import ProfileSettingsForm from "../settings/components/profile-settings-form.component.vue";
 import AppSettingsForm from "../settings/components/app-settings-form.component.vue";
 
-import OrganizationRecruitments from "../organizations/pages/recruitments.component.vue";
+import OrganizationRecruitments from "../organizations/pages/organization-recruitments.component.vue";
 import OrganizationProfile from "../organizations/pages/organization-profile.component.vue";
 import OrganizationCreation from "../organizations/pages/organization-creation.component.vue";
 import RecruitersHome from "../recruiters/pages/recruiters-home.component.vue";
 import PageNotFoundComponent from "../shared/pages/page-not-found.component.vue";
+import RecruitmentDashboard from "../recruitment/pages/recruitment-dashboard.component.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -24,17 +25,20 @@ const router = createRouter({
     { path: '/register', name: 'Register', component: Register },
     { path: '/forgot-password', name: 'Forgot Password', component: ForgotPassword},
     { path: '/recover-password', name: 'Password Recovery', component: PasswordRecovery},
-    { path: '/settings', name: 'Settings', component: Settings,
+    { path: '/settings',
+      name: 'Settings',
+      component: Settings,
       children: [
         { path: '', redirect: '/settings/profile', component: ProfileSettingsForm },
         { path: 'profile', name: 'Profile Settings', component: ProfileSettingsForm },
         { path: 'app', name: 'App Settings', component: AppSettingsForm }
       ]
     },
-    // This should go to /TestigosdeVue/home
     { path: '/organizations/create', name: 'Organizations Creation', component: OrganizationCreation },
+    // This should go to /TestigosdeVue/home
     { path: '/profile', name: 'Organization', component: OrganizationProfile },
     { path: '/recruitments', name: 'Recruitments', component: OrganizationRecruitments },
+    { path: '/:id/dashboard', name: 'Recruitment Dashboard', component: RecruitmentDashboard },
     { path: '/:pathMatch(.*)*', name: 'Error 404', component: PageNotFoundComponent },
     { path: '/', redirect: '/home'},
   ]

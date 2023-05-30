@@ -86,6 +86,15 @@
     "job-post-status-label": "Estado de Publicación de Oferta",
     "organizer-label": "Organizador"
   },
+  "recruitment": {
+    "dashboard": {
+      "add-phase-lbl": "Agregar fase",
+      "add-candidates-lbl": "Agregar candidatos",
+      "recruitment-settings-lbl": "Configuración",
+      "candidates-counter": " Candidatos",
+      "phases-counter": " Etapas"
+    }
+  },
   "activities": {
     "schedule-title": "Tareas de hoy"
   },

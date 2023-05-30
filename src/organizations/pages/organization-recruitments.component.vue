@@ -31,21 +31,16 @@
       />
     </div>
     <div class="flex justify-center items-center h-full">
-      <div class="max-w-3xl py-4">
-        <recruitment-card
-          v-for="recruitment in recruitments"
-          :key="recruitment.id"
-          :recruitment="recruitment"
-          class="mb-4"
-        />
+      <div class="grid max-w-4xl py-4 space-y-4">
+        <recruitment-card v-for="recruitment in recruitments" :recruitment="recruitment"/>
       </div>
     </div>
   </div>
   </template>
   
   <script>
-  import RecruitmentCard from "../components/recruitment-card.component.vue";
-  import {RecruitmentApiService} from "../services/recruitment.service.js";
+  import RecruitmentCard from "../../shared/components/recruitment-card.component.vue";
+  import {RecruitmentApiService} from "../../shared/services/recruitment.service.js";
   
   export default {
     name: "organization-recruitments",
