@@ -31,7 +31,7 @@
       />
     </div>
     <div class="flex justify-center items-center h-full">
-      <div class="max-w-4xl py-4 grid grid-cols-2 ">
+      <div class="grid max-w-4xl py-4 space-y-4">
         <recruitment-card v-for="recruitment in recruitments" :recruitment="recruitment"/>
       </div>
     </div>

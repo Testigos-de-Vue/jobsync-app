@@ -21,6 +21,28 @@
       "phoneNumber": 123000321,
       "profileImageUrl": "https://cdn.britannica.com/41/240741-050-D4777963/Pedro-Pascal-attends-premiere-The-Last-of-US-January-2023.jpg?w=400&h=300&c=crop",
       "subscribedToNewsLetter": false
+    },
+    {
+      "id": 3,
+      "name": "Miranda Cosgrove",
+      "isRecruiter":  false,
+      "organizations": [],
+      "email": "cosgrove@mail.com",
+      "password": "password-candidate1",
+      "phoneNumber": 991239013,
+      "profileImageUrl": "https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "subscribedToNewsLetter": false
+    },
+    {
+      "id": 4,
+      "name": "Sam Smith",
+      "isRecruiter":  false,
+      "organizations": [],
+      "email": "smith@mail.com",
+      "password": "password-candidate2",
+      "phoneNumber": 991939133,
+      "profileImageUrl": "https://images.pexels.com/photos/16869355/pexels-photo-16869355/free-photo-of-blanco-y-negro-hombre-traje-arbol.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "subscribedToNewsLetter": false
     }
   ],
   "organizations": [
@@ -45,17 +67,53 @@
       "id": 1,
       "title": "2023-Business Administration UPC Interniship Program Recruitment",
       "startDate": "2023/04/12",
-      "recruitmentStatus": "Reviewing Candidates",
-      "jobPostStatus": "Hiring Open 🟢",
-      "organizer": "Jeffrey Ocampos"
+      "recruitmentStatus": "Beginning",
+      "isActive": true,
+      "organizer": "Jeffrey Ocampos",
+      "candidates": [
+        {
+          "candidateId": 3,
+          "currentPhaseId": 1,
+          "files": [],
+          "active": true
+        },
+        {
+          "candidateId": 4,
+          "currentPhaseId": 1,
+          "files": [],
+          "active": true
+        }
+      ],
+      "phases": [
+        {
+          "phaseId": 1,
+          "title": "Default",
+          "description": "Default",
+          "files": []
+        },
+        {
+          "phaseId": 2,
+          "title": "Beginning",
+          "description": "New candidates",
+          "files": []
+        },
+        {
+          "phaseId": 3,
+          "title": "Testing",
+          "description": "Awaiting candidates to finish tests",
+          "files": []
+        }
+      ]
     },
     {
       "id": 2,
       "title": "Staff team for Miraflores shop part-timer recruitment (No CV needed)",
       "startDate": "2023/02/10",
-      "recruitmentStatus": "Interviewing candidates",
-      "jobPostStatus": "Closed 🔴",
-      "organizer": "Jeffrey Ocampos"
+      "recruitmentStatus": "Finished",
+      "isActive": false,
+      "organizer": "Jeffrey Ocampos",
+      "candidates": [],
+      "phases": []
     }
   ],
   "tasks": [

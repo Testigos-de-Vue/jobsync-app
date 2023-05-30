@@ -1,6 +1,6 @@
 <template>
   <router-link :to="`/${recruitment.id}/dashboard`">
-    <div class="border-2 px-8 py-4 rounded-lg duration-300 hover:border-primary w-11/12">
+    <div class="border-2 px-8 py-4 rounded-lg duration-300 hover:border-primary">
       <h1 class="font-semibold text-2xl">{{ recruitment.title }}</h1>
       <ul>
         <li>

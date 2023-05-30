@@ -8,4 +8,8 @@ export class RecruitmentApiService {
   getAll() {
     return http.get(`recruitments`);
   }
+
+  getById(id){
+    return http.get(`recruitments/${id}`);
+  }
 }

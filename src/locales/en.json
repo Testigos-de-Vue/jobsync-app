@@ -91,7 +91,9 @@
     "dashboard": {
       "add-phase-lbl": "Add phase",
       "add-candidates-lbl": "Add candidates",
-      "recruitment-settings-lbl": "Settings"
+      "recruitment-settings-lbl": "Settings",
+      "candidates-counter": " Candidates",
+      "phases-counter": " Phases"
     }
   },
   "activities": {
