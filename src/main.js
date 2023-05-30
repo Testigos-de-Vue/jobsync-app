@@ -24,6 +24,7 @@ import Calendar from 'primevue/calendar'
 import InputSwitch from 'primevue/inputswitch';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
+import Dialog from 'primevue/dialog';
 
 import {createPinia} from "pinia";
 
@@ -31,20 +32,21 @@ import {createPinia} from "pinia";
 const pinia = createPinia();
 
 createApp(App)
-  .use(PrimeVue, { ripple: true })
-  .use(i18n)
-  .use(router)
-  .use(pinia)
-  .component('pv-message', Message)
-  .component('pv-file-upload', FileUpload)
-  .component('pv-checkbox', Checkbox)
-  .component('pv-dropdown', Dropdown)
-  .component('pv-sidebar', Sidebar)
-  .component('pv-input', InputText)
-  .component('pv-button', Button)
-  .component('pv-card', Card)
-  .component('pv-calendar', Calendar)
-  .component('pv-inputswitch', InputSwitch)
-  .component('pv-data-table', DataTable)
-  .component('pv-column', Column)
-  .mount('#app')
+    .use(PrimeVue, { ripple: true })
+    .use(i18n)
+    .use(router)
+    .use(pinia)
+    .component('pv-message', Message)
+    .component('pv-file-upload', FileUpload)
+    .component('pv-checkbox', Checkbox)
+    .component('pv-dropdown', Dropdown)
+    .component('pv-sidebar', Sidebar)
+    .component('pv-input', InputText)
+    .component('pv-button', Button)
+    .component('pv-card', Card)
+    .component('pv-calendar', Calendar)
+    .component('pv-inputswitch', InputSwitch)
+    .component('pv-data-table', DataTable)
+    .component('pv-column', Column)
+    .component('pv-dialog', Dialog)
+    .mount('#app')
