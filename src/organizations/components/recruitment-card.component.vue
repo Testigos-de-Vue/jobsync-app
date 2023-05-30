@@ -1,29 +1,23 @@
 <template>
-    <pv-card rounded>
-        <template #title>
-            <h1 class="font-semibold">{{ recruitment.title }}</h1>
-        </template>
-        <template #content>
-            <ul>
-                <li>
-                    <span class="font-semibold">{{ $t('recruitment-card.start-date-label') }}: </span>
-                    {{ recruitment.startDate }}
-                </li>
-                <li>
-                    <span class="font-semibold text-primary">{{ $t('recruitment-card.recruitment-status-label') }}: </span>
-                    {{ recruitment.recruitmentStatus }}
-                </li>
-                <li>
-                    <span class="font-semibold text-primary">{{ $t('recruitment-card.job-post-status-label') }}: </span>
-                    {{ recruitment.jobPostStatus }}
-                </li>
-                <li>
-                    <span class="font-semibold text-primary">{{ $t('recruitment-card.organizer-label') }}: </span>
-                    {{ recruitment.organizer }}
-                </li>
-            </ul>
-        </template>
-    </pv-card>
+  <router-link :to="`/${recruitment.id}/dashboard`">
+    <div class="border-2 px-8 py-4 rounded-lg duration-300 hover:border-primary w-11/12">
+      <h1 class="font-semibold text-2xl">{{ recruitment.title }}</h1>
+      <ul>
+        <li>
+          <span class="font-semibold">{{ $t('recruitment-card.start-date-label') }}: </span>
+          {{ recruitment.startDate }}
+        </li>
+        <li>
+          <span class="font-semibold text-primary">{{ $t('recruitment-card.recruitment-status-label') }}: </span>
+          {{ recruitment.recruitmentStatus }}
+        </li>
+        <li>
+          <span class="font-semibold text-primary">{{ $t('recruitment-card.organizer-label') }}: </span>
+          {{ recruitment.organizer }}
+        </li>
+      </ul>
+    </div>
+  </router-link>
 </template>
 
 <script>

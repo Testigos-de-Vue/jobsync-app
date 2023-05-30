@@ -31,13 +31,8 @@
       />
     </div>
     <div class="flex justify-center items-center h-full">
-      <div class="max-w-3xl py-4">
-        <recruitment-card
-          v-for="recruitment in recruitments"
-          :key="recruitment.id"
-          :recruitment="recruitment"
-          class="mb-4"
-        />
+      <div class="max-w-4xl py-4 grid grid-cols-2 ">
+        <recruitment-card v-for="recruitment in recruitments" :recruitment="recruitment"/>
       </div>
     </div>
   </div>
