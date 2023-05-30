@@ -10,7 +10,6 @@ import Settings from "../settings/pages/settings.component.vue";
 import ProfileSettingsForm from "../settings/components/profile-settings-form.component.vue";
 import AppSettingsForm from "../settings/components/app-settings-form.component.vue";
 
-import OrganizationHome from "../recruiters/pages/recruiters-home.component.vue";
 import OrganizationRecruitments from "../organizations/pages/recruitments.component.vue";
 import OrganizationProfile from "../organizations/pages/organization-profile.component.vue";
 import OrganizationCreation from "../organizations/pages/organization-creation.component.vue";
@@ -20,6 +19,7 @@ import PageNotFoundComponent from "../shared/pages/page-not-found.component.vue"
 const router = createRouter({
   history: createWebHistory(),
   routes: [
+    { path: '/home', name: 'Recruiter Home', component: RecruitersHome },
     { path: '/login', name: 'Log In', component: Login },
     { path: '/register', name: 'Register', component: Register },
     { path: '/forgot-password', name: 'Forgot Password', component: ForgotPassword},
@@ -33,11 +33,10 @@ const router = createRouter({
     },
     // This should go to /TestigosdeVue/home
     { path: '/organizations/create', name: 'Organizations Creation', component: OrganizationCreation },
-    { path: '/home', name: 'Organization Home', component: OrganizationHome },
     { path: '/profile', name: 'Organization', component: OrganizationProfile },
     { path: '/recruitments', name: 'Recruitments', component: OrganizationRecruitments },
     { path: '/:pathMatch(.*)*', name: 'Error 404', component: PageNotFoundComponent },
-    { path: '/', redirect: '/organizations/home'},
+    { path: '/', redirect: '/home'},
   ]
 });
 
