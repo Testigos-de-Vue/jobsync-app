@@ -110,6 +110,13 @@
     "free": "Free",
     "premium": "Premium"
   },
+  "page-not-found": {
+    "main-image-alt": "Un dibujo de una lupa",
+    "exclamation": "¡Vaya!",
+    "message": "No rompiste el internet, pero no podemos encontrar lo que estás buscando.",
+    "doesnt-exist": "no existe",
+    "go-back-to-home": "Volver al Inicio"
+  },
   "link": {
     "terms-of-service": "https://jobsync.netlify.app/es/terminos-de-servicio/"
   }

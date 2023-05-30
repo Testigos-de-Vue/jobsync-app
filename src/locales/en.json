@@ -111,6 +111,13 @@
     "free": "Free",
     "premium": "Premium"
   },
+  "page-not-found": {
+    "main-image-alt": "A drawing of magnifying glass",
+    "exclamation": "Oops!",
+    "message": "You didn't break the internet, but we can't find what you are looking for.",
+    "doesnt-exist": "doesn't exist",
+    "go-back-to-home": "Go back to Home"
+  },
   "link": {
     "terms-of-service": "https://jobsync.netlify.app/terms-of-service/"
   }

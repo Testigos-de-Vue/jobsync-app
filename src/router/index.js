@@ -14,6 +14,8 @@ import OrganizationHome from "../recruiters/pages/recruiters-home.component.vue"
 import OrganizationRecruitments from "../organizations/pages/recruitments.component.vue";
 import OrganizationProfile from "../organizations/pages/organization-profile.component.vue";
 import OrganizationCreation from "../organizations/pages/organization-creation.component.vue";
+import RecruitersHome from "../recruiters/pages/recruiters-home.component.vue";
+import PageNotFoundComponent from "../shared/pages/page-not-found.component.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -34,8 +36,8 @@ const router = createRouter({
     { path: '/home', name: 'Organization Home', component: OrganizationHome },
     { path: '/profile', name: 'Organization', component: OrganizationProfile },
     { path: '/recruitments', name: 'Recruitments', component: OrganizationRecruitments },
-
-    { path: '/', redirect: '/home'},
+    { path: '/:pathMatch(.*)*', name: 'Error 404', component: PageNotFoundComponent },
+    { path: '/', redirect: '/organizations/home'},
   ]
 });
 
