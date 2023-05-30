@@ -39,8 +39,8 @@
   </template>
   
   <script>
-  import RecruitmentCard from "../components/recruitment-card.component.vue";
-  import {RecruitmentApiService} from "../services/recruitment.service.js";
+  import RecruitmentCard from "../../shared/components/recruitment-card.component.vue";
+  import {RecruitmentApiService} from "../../shared/services/recruitment.service.js";
   
   export default {
     name: "organization-recruitments",
