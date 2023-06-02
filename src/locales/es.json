@@ -92,7 +92,18 @@
       "add-candidates-lbl": "Agregar candidatos",
       "recruitment-settings-lbl": "Configuración",
       "candidates-counter": " Candidatos",
-      "phases-counter": " Etapas"
+      "phases-counter": " Etapas",
+      "candidates-table": {
+        "phases-header": "Fases de reclutamiento",
+        "phase-lbl": "Fase",
+        "description-lbl": "Descripción",
+        "candidates-lbl": "Candidatos",
+        "files-lbl": "Archivos",
+        "see-lbl": "Ver",
+        "name-lbl": "Candidato",
+        "email-lbl": "Email",
+        "phone-lbl": "Contacto"
+      }
     }
   },
   "activities": {

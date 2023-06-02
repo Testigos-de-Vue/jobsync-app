@@ -70,38 +70,52 @@
       "recruitmentStatus": "Beginning",
       "isActive": true,
       "organizer": "Jeffrey Ocampos",
-      "candidates": [
-        {
-          "candidateId": 3,
-          "currentPhaseId": 1,
-          "files": [],
-          "active": true
-        },
-        {
-          "candidateId": 4,
-          "currentPhaseId": 1,
-          "files": [],
-          "active": true
-        }
-      ],
       "phases": [
         {
-          "phaseId": 1,
-          "title": "Default",
-          "description": "Default",
-          "files": []
+          "id": 1,
+          "title": "Candidates",
+          "description": "New candidates",
+          "files": [],
+          "candidates": [
+            {
+              "candidateId": 3,
+              "files": [],
+              "active": true
+            },
+            {
+              "candidateId": 4,
+              "files": [],
+              "active": true
+            }
+          ]
         },
         {
-          "phaseId": 2,
+          "id": 2,
           "title": "Beginning",
           "description": "New candidates",
-          "files": []
+          "files": [],
+          "candidates": []
         },
         {
-          "phaseId": 3,
+          "id": 3,
           "title": "Testing",
           "description": "Awaiting candidates to finish tests",
-          "files": []
+          "files": [],
+          "candidates": []
+        },
+        {
+          "id": 4,
+          "title": "Hired",
+          "description": "",
+          "files": [],
+          "candidates": []
+        },
+        {
+          "id": 5,
+          "title": "Disqualified",
+          "description": "",
+          "files": [],
+          "candidates": []
         }
       ]
     },
@@ -112,8 +126,22 @@
       "recruitmentStatus": "Finished",
       "isActive": false,
       "organizer": "Jeffrey Ocampos",
-      "candidates": [],
-      "phases": []
+      "phases": [
+        {
+          "id": 4,
+          "title": "Hired",
+          "description": "",
+          "files": [],
+          "candidates": []
+        },
+        {
+          "id": 5,
+          "title": "Disqualified",
+          "description": "",
+          "files": [],
+          "candidates": []
+        }
+      ]
     }
   ],
   "tasks": [
