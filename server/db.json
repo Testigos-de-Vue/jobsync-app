@@ -52,12 +52,34 @@
       "avatarUrl": "https://i.imgur.com/Oco9isG.png" ,
       "members": [
         {
-          "userId": 1,
-          "role": "Admin"
+          "id": 1,
+          "role": "Admin",
+          "user": {
+            "id": 1,
+            "name": "Natalia Gómez",
+            "isRecruiter": true,
+            "subTitle": "Testigos de Vue",
+            "email": "natalia_gomez@mail.com",
+            "password": "super-secure123",
+            "phoneNumber": 99900066,
+            "profileImageUrl": "https://im.idiva.com/content/2016/Feb/girl_woman_working_career1.jpg",
+            "subscribedToNewsLetter": false
+          }
         },
         {
-          "userId": 2,
-          "role": "Recruiter"
+          "id": 2,
+          "role": "Recruiter",
+          "user": {
+            "id": 2,
+            "name": "Pedro Pascal",
+            "isRecruiter":  true,
+            "organizations": ["JobSync"],
+            "email": "pedroPascal@mail.com",
+            "password": "new-password123",
+            "phoneNumber": 123000321,
+            "profileImageUrl": "https://cdn.britannica.com/41/240741-050-D4777963/Pedro-Pascal-attends-premiere-The-Last-of-US-January-2023.jpg?w=400&h=300&c=crop",
+            "subscribedToNewsLetter": false
+          }
         }
       ]
     }

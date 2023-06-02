@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-    <div class="flex space-x-4 overflow-x-auto">
+    <div class="flex space-x-4 overflow-x-auto" v-if="recruitment && recruitment.phases">
       <recruitment-phase-card v-for="phase in recruitment.phases" :key="phase.id" :phase="phase"/>
     </div>
   </div>
