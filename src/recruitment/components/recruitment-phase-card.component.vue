@@ -1,20 +1,24 @@
 <template>
-  <div class="h-full flex items-center justify-center">
-    <div :class="[`bg-gray-100`, `dark:bg-gray-800`, 'flex border rounded-xl px-4 py-4 w-72 h-[630px]']">
+  <div>
+    <div class="bg-gray-100 dark:bg-gray-800 border rounded-xl px-4 py-4 w-72 h-[630px] space-y-2">
       <div id="header" class="flex justify-between items-center w-full h-fit px-1 py-1">
         <h1 class="font-semibold text-xl">{{ phase.title }}</h1>
-        <div class="flex">
-          <pv-button icon="pi pi-ellipsis-h" text rounded size="large" severity="secondary" outlined
-                     aria-label="Phase dialog expander" />
-        </div>
+        <pv-button
+            icon="pi pi-ellipsis-h" text rounded size="large" severity="secondary" outlined
+            aria-label="Phase dialog expander" />
       </div>
-      <div>
-
+      <div v-for="candidate in phase.candidates" :key="candidate.id">
+        <div class="flex border px-2 py-4 rounded-lg bg-white hover:scale-95 duration-100 items-center space-x-2">
+          <img class="rounded-full w-12 h-12 object-cover"
+               :src=candidate.user.profileImageUrl
+               :alt="candidate.user.name + ' profile picture'"/>
+          <p>{{ candidate.user.name }}</p>
+        </div>
       </div>
     </div>
   </div>
-
 </template>
+
 
 <script>
 export default {
@@ -24,9 +28,6 @@ export default {
       type: Object,
       required: true
     }
-  },
-  methods: {
-
   }
 }
 </script>

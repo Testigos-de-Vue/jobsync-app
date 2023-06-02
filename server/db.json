@@ -52,11 +52,11 @@
       "avatarUrl": "https://i.imgur.com/Oco9isG.png" ,
       "members": [
         {
-          "memberId": 1,
+          "userId": 1,
           "role": "Admin"
         },
         {
-          "memberId": 2,
+          "userId": 2,
           "role": "Recruiter"
         }
       ]
@@ -78,14 +78,38 @@
           "files": [],
           "candidates": [
             {
-              "candidateId": 3,
+              "id": 1,
               "files": [],
-              "active": true
+              "active": true,
+              "postulationDate": "2023-05-13T05:00:00.000Z",
+              "user": {
+                "id": 3,
+                "name": "Miranda Cosgrove",
+                "isRecruiter":  false,
+                "organizations": [],
+                "email": "cosgrove@mail.com",
+                "password": "password-candidate1",
+                "phoneNumber": 991239013,
+                "profileImageUrl": "https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                "subscribedToNewsLetter": false
+              }
             },
             {
-              "candidateId": 4,
+              "id": 2,
               "files": [],
-              "active": true
+              "active": true,
+              "postulationDate": "2023-05-16T05:00:00.000Z",
+              "user": {
+                "id": 4,
+                "name": "Sam Smith",
+                "isRecruiter":  false,
+                "organizations": [],
+                "email": "smith@mail.com",
+                "password": "password-candidate2",
+                "phoneNumber": 991939133,
+                "profileImageUrl": "https://images.pexels.com/photos/16869355/pexels-photo-16869355/free-photo-of-blanco-y-negro-hombre-traje-arbol.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                "subscribedToNewsLetter": false
+              }
             }
           ]
         },
