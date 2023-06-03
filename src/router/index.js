@@ -10,7 +10,7 @@ import Settings from "../settings/pages/settings.component.vue";
 import ProfileSettingsForm from "../settings/components/profile-settings-form.component.vue";
 import AppSettingsForm from "../settings/components/app-settings-form.component.vue";
 
-import OrganizationRecruitments from "../organizations/pages/organization-recruitments.component.vue";
+import OrganizationRecruitments from "../recruitment/pages/organization-recruitments.component.vue";
 import OrganizationProfile from "../organizations/pages/organization-profile.component.vue";
 import OrganizationCreation from "../organizations/pages/organization-creation.component.vue";
 import RecruitersHome from "../recruiters/pages/recruiters-home.component.vue";
