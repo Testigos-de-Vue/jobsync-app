@@ -12,7 +12,7 @@
             Building...
           </p>
           <template #footer>
-            <pv-button label="Okay" icon="pi pi-times" @click="visible = false" text />
+            <pv-button label="Okay" icon="pi pi-times" @click="phaseDialog = false" text />
           </template>
         </pv-dialog>
       </div>
@@ -41,8 +41,6 @@
 
 
 <script>
-import {RecruitmentApiService} from "../../shared/services/recruitment.service.js";
-
 export default {
   name: "recruitment-phase-card",
   props: {

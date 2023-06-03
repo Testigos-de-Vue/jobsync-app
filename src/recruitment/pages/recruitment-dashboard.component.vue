@@ -10,18 +10,33 @@
         <pv-button rounded outlined
             aria-label="Add phase"
             :label="$t('recruitment.dashboard.add-phase-lbl')"
-            @click=""
+            @click="addPhaseDialog = true"
         />
+        <pv-dialog v-model:visible="addPhaseDialog" modal header="Building">
+          <template #footer>
+            <pv-button label="Okay" icon="pi pi-times" @click="addPhaseDialog = false" text />
+          </template>
+        </pv-dialog>
         <pv-button rounded outlined
             aria-label="Add Candidates"
             :label="$t('recruitment.dashboard.add-candidates-lbl')"
-            @click=""
+            @click="addCandidatesDialog = true"
         />
+        <pv-dialog v-model:visible="addCandidatesDialog" modal header="Building">
+          <template #footer>
+            <pv-button label="Okay" icon="pi pi-times" @click="addCandidatesDialog = false" text />
+          </template>
+        </pv-dialog>
         <pv-button rounded outlined
             aria-label="Recruitment Settings"
             :label="$t('recruitment.dashboard.recruitment-settings-lbl')"
-            @click=""
+            @click="recruitmentSettingDialog = true"
         />
+        <pv-dialog v-model:visible="recruitmentSettingDialog" modal header="Building">
+          <template #footer>
+            <pv-button label="Okay" icon="pi pi-times" @click="recruitmentSettingDialog = false" text />
+          </template>
+        </pv-dialog>
       </div>
       <div class="gap-4">
         <div class="space-y-2">
@@ -63,6 +78,9 @@ export default {
   components: { RecruitmentPhaseCard, RecruitmentCard },
   data() {
     return {
+      addPhaseDialog: false,
+      addCandidatesDialog: false,
+      recruitmentSettingDialog: false,
       recruitmentApi: new RecruitmentApiService(),
       recruitment: {}
     }
