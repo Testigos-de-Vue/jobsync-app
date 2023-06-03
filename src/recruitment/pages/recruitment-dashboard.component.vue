@@ -54,7 +54,7 @@
 </template>
 
 <script>
-import RecruitmentCard from "../../shared/components/recruitment-card.component.vue";
+import RecruitmentCard from "../components/recruitment-card.component.vue";
 import {RecruitmentApiService} from "../../shared/services/recruitment.service.js";
 import RecruitmentPhaseCard from "../components/recruitment-phase-card.component.vue";
 
