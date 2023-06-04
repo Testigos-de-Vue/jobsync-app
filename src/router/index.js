@@ -16,6 +16,7 @@ import OrganizationCreation from "../organizations/pages/organization-creation.c
 import RecruitersHome from "../recruiters/pages/recruiters-home.component.vue";
 import PageNotFoundComponent from "../shared/pages/page-not-found.component.vue";
 import RecruitmentDashboard from "../recruitment/pages/recruitment-dashboard.component.vue";
+import CandidateApplicationsDashboard from "../recruitment/pages/candidate-applications-dashboard.component.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -34,6 +35,7 @@ const router = createRouter({
         { path: 'app', name: 'App Settings', component: AppSettingsForm }
       ]
     },
+    { path: '/applications', name: 'Applications', component: CandidateApplicationsDashboard },
     { path: '/organizations/create', name: 'Organizations Creation', component: OrganizationCreation },
     // This should go to /TestigosdeVue/home
     { path: '/profile', name: 'Organization', component: OrganizationProfile },

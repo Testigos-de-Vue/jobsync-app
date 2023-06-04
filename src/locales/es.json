@@ -4,6 +4,7 @@
   },
   "navbar": {
     "home": "Inicio",
+    "applications": "Postulaciones",
     "recruitments": "Reclutamientos",
     "organization": "Organización",
     "settings": "Configuración",

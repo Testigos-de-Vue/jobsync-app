@@ -4,6 +4,7 @@
   },
   "navbar": {
     "home": "Home",
+    "applications": "Applications",
     "recruitments": "Recruitments",
     "organization": "Organization",
     "settings": "Settings",
