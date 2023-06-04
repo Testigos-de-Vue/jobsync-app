@@ -25,6 +25,7 @@ import InputSwitch from 'primevue/inputswitch';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import Dialog from 'primevue/dialog';
+import Tag from 'primevue/tag';
 
 import {createPinia} from "pinia";
 
@@ -49,4 +50,5 @@ createApp(App)
     .component('pv-data-table', DataTable)
     .component('pv-column', Column)
     .component('pv-dialog', Dialog)
+    .component('pv-tag', Tag)
     .mount('#app')

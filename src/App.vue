@@ -51,7 +51,9 @@ export default {
   },
   created() {
     this.$i18n.locale = localStorage.getItem("preferred-language") ?? "en";
-    this.authApi.getUserById(1)
+    // 1=recruiter 4=candidate
+    const userId = 1;
+    this.authApi.getUserById(userId)
       .then(response => this.user = response.data);
   },
   computed: {

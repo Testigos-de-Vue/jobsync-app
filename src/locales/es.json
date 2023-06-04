@@ -4,6 +4,7 @@
   },
   "navbar": {
     "home": "Inicio",
+    "applications": "Postulaciones",
     "recruitments": "Reclutamientos",
     "organization": "Organización",
     "settings": "Configuración",
@@ -139,5 +140,12 @@
   },
   "link": {
     "terms-of-service": "https://jobsync.netlify.app/es/terminos-de-servicio/"
+  },
+  "applications": {
+    "application": "Postulación",
+    "application-date": "Fecha de postulación",
+    "current-phase": "Fase actual",
+    "status": "Estado",
+    "actions": "Acciones"
   }
 }
