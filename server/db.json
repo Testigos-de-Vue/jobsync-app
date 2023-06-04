@@ -5,6 +5,7 @@
       "name": "Natalia Gómez",
       "isRecruiter": true,
       "subTitle": "Testigos de Vue",
+      "organizations": ["JobSync"],
       "email": "natalia_gomez@mail.com",
       "password": "super-secure123",
       "phoneNumber": 99900066,
@@ -26,23 +27,65 @@
       "id": 3,
       "name": "Miranda Cosgrove",
       "isRecruiter":  false,
-      "organizations": [],
       "email": "cosgrove@mail.com",
       "password": "password-candidate1",
       "phoneNumber": 991239013,
       "profileImageUrl": "https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "subscribedToNewsLetter": false
+      "subscribedToNewsLetter": false,
+      "organizations": [],
+      "applications": [
+        {
+          "id": 1,
+          "recruitment": {
+            "id": 1,
+            "title": "2023-Business Administration UPC Interniship Program Recruitment",
+            "startDate": "2023/04/12",
+            "applicationDate": "2023/04/12",
+            "recruitmentStatus": "Beginning",
+            "isActive": true,
+            "organizer": "Jeffrey Ocampos",
+            "files": [],
+            "currentPhase": {
+              "id": 1,
+              "title": "Candidates",
+              "description": "New candidates",
+              "files": []
+            }
+          }
+        }
+      ]
     },
     {
       "id": 4,
       "name": "Sam Smith",
       "isRecruiter":  false,
-      "organizations": [],
       "email": "smith@mail.com",
       "password": "password-candidate2",
       "phoneNumber": 991939133,
       "profileImageUrl": "https://images.pexels.com/photos/16869355/pexels-photo-16869355/free-photo-of-blanco-y-negro-hombre-traje-arbol.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "subscribedToNewsLetter": false
+      "subscribedToNewsLetter": false,
+      "organizations": [],
+      "applications": [
+        {
+          "id": 1,
+          "recruitment": {
+            "id": 1,
+            "title": "2023-Business Administration UPC Interniship Program Recruitment",
+            "startDate": "2023/04/12",
+            "applicationDate": "2023/04/12",
+            "recruitmentStatus": "Beginning",
+            "isActive": true,
+            "organizer": "Jeffrey Ocampos",
+            "files": [],
+            "currentPhase": {
+              "id": 1,
+              "title": "Candidates",
+              "description": "New candidates",
+              "files": []
+            }
+          }
+        }
+      ]
     }
   ],
   "organizations": [

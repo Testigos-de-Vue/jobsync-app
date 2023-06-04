@@ -8,4 +8,7 @@ export class UsersApiService {
   getAll() {
     return http.get(`users`);
   }
+  getById(id) {
+    return http.get(`users/${id}`);
+  }
 }

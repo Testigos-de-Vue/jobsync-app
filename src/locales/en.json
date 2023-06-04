@@ -141,5 +141,12 @@
   },
   "link": {
     "terms-of-service": "https://jobsync.netlify.app/terms-of-service/"
+  },
+  "applications": {
+    "application": "Application",
+    "application-date": "Application date",
+    "current-phase": "Current phase",
+    "status": "Status",
+    "actions": "Actions"
   }
 }
