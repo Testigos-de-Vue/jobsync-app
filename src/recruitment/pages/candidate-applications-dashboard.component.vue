@@ -69,8 +69,8 @@ export default {
     const userId = 3;
     this.usersApi.getById(userId)
         .then(response => this.user = response.data)
-        .catch(e => {
-          this.countries.push("Error loading user");
+        .catch(error => {
+          this.countries.push("Error loading user with error ", error);
         })
   },
   methods:{
