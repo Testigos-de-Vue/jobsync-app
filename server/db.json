@@ -70,7 +70,7 @@
           "id": 1,
           "recruitment": {
             "id": 1,
-            "title": "2023-Business Administration UPC Interniship Program Recruitment",
+            "title": "2023-Business Administration UPC Internship Program Recruitment",
             "startDate": "2023/04/12",
             "applicationDate": "2023/04/12",
             "recruitmentStatus": "Beginning",
@@ -130,7 +130,7 @@
   "recruitments": [
     {
       "id": 1,
-      "title": "2023-Business Administration UPC Interniship Program Recruitment",
+      "title": "2023-Business Administration UPC Internship Program Recruitment",
       "startDate": "2023/04/12",
       "recruitmentStatus": "Beginning",
       "isActive": true,
