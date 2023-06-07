@@ -25,7 +25,7 @@
       <pv-button type="submit" :label="$t('auth.login')" outlined />
       <div class="grid place-items-center">
         <p class="text-primary">
-          <router-link to="/password-forgot" class="hover:font-medium">{{ $t('auth.forgot-password') }}</router-link>
+          <router-link to="/forgot-password" class="hover:font-medium">{{ $t('auth.forgot-password') }}</router-link>
         </p>
         <p>{{ $t('auth.account-question') }}
           <router-link class="hover:font-medium text-primary" to="register">{{ $t('auth.sign-up') }}</router-link>
