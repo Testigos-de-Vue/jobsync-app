@@ -13,6 +13,7 @@ import AppSettingsForm from "../settings/components/app-settings-form.component.
 import OrganizationRecruitments from "../recruitment/pages/organization-recruitments.component.vue";
 import OrganizationProfile from "../organizations/pages/organization-profile.component.vue";
 import OrganizationCreation from "../organizations/pages/organization-creation.component.vue";
+import OrganizationSettings from "../organizations/pages/organization-settings.component.vue";
 import RecruitersHome from "../recruiters/pages/recruiters-home.component.vue";
 import PageNotFoundComponent from "../shared/pages/page-not-found.component.vue";
 import RecruitmentDashboard from "../recruitment/pages/recruitment-dashboard.component.vue";
@@ -37,6 +38,7 @@ const router = createRouter({
     },
     { path: '/applications', name: 'Applications', component: CandidateApplicationsDashboard },
     { path: '/organizations/create', name: 'Organizations Creation', component: OrganizationCreation },
+    { path: '/organizations/settings', name: 'Organization Settings', component: OrganizationSettings},
     // This should go to /TestigosdeVue/home
     { path: '/profile', name: 'Organization', component: OrganizationProfile },
     { path: '/recruitments', name: 'Recruitments', component: OrganizationRecruitments },

@@ -21,8 +21,10 @@
             <h1 class="text-primary font-medium text-xl">Working on</h1>
             <p class="font-bold text-3xl">{{ currentOrganization.name }}</p>
           </div>
+          <router-link to="organizations/settings">
           <pv-button rounded outlined
               :label="$t('organization-profile.organization-settings-label')"/>
+          </router-link>
         </div>
       </div>
     </div>

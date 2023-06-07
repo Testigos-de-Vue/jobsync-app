@@ -26,6 +26,7 @@ import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import Dialog from 'primevue/dialog';
 import Tag from 'primevue/tag';
+import RadioButton from "primevue/radiobutton";
 
 import {createPinia} from "pinia";
 
@@ -51,4 +52,5 @@ createApp(App)
     .component('pv-column', Column)
     .component('pv-dialog', Dialog)
     .component('pv-tag', Tag)
+    .component('pv-radiobutton', RadioButton)
     .mount('#app')
