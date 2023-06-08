@@ -82,6 +82,22 @@
         "phone-header": "Phone Number"
     }
   },
+  "organization-settings": {
+    "title": "Organization Settings",
+    "change-picture": "Change Picture",
+    "current-plan": "Current Plan",
+    "change-plan": "Change Plan",
+    "add-members": "Add Members",
+    "company-admin": "Company Admin",
+    "company-email": "Company Email",
+    "country": "Country",
+    "company-phone": "Company Phone Number",
+    "company-address": "Company Address",
+    "save-changes": "Save changes",
+    "return": "Return",
+    "plan-options": "Choose a plan",
+    "accept": "Accept"
+  },
   "recruitment-card": {
     "start-date-label": "Start Date",
     "recruitment-status-label": "Status",
@@ -130,7 +146,14 @@
   },
   "plans": {
     "free": "Free",
-    "premium": "Premium"
+    "free-feature-1": "All the features of the platform.",
+    "free-feature-2": "Limited number of recruiters.",
+    "free-feature-3": "Limited number of candidates.",
+    "premium": "Premium",
+    "premium-feature-1": "All the features of the platform.",
+    "premium-feature-2": "Unlimited number of recruiters.",
+    "premium-feature-3": "Unlimited number of candidates.",
+    "premium-feature-4": "Priority customer support 24/7."
   },
   "page-not-found": {
     "main-image-alt": "A drawing of magnifying glass",
