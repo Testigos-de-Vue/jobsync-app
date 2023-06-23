@@ -1,4 +1,5 @@
 <template>
+  <pv-toast />
   <div
     class="h-screen bg-gray-50 dark:bg-slate-900 grid grid-rows-[auto_1fr] md:grid-rows-1 md:place-items-center"
     :class="{'md:grid-cols-[auto_1fr]': !isAnAuthenticationPath($route.path)}"
