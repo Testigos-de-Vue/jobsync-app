@@ -88,6 +88,12 @@
     "organizer-label": "Organizador"
   },
   "recruitment": {
+    "create-recruitment": {
+      "title": "Nuevo proceso de reclutamiento",
+      "title-placeholder": "Título",
+      "description-placeholder": "Descripción (Opcional)",
+      "create-submit-lbl": "Crear"
+    },
     "dashboard": {
       "add-phase-lbl": "Agregar fase",
       "add-candidates-lbl": "Agregar candidatos",
