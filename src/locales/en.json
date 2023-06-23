@@ -16,7 +16,8 @@
   "auth": {
     "candidate": "Candidate",
     "recruiter": "Recruiter",
-    "name": "Name",
+    "first-name": "First Name",
+    "last-name": "Last Name",
     "sign-title": "Sign In",
     "sign-up-title": "Register",
     "e-mail": "E-mail",

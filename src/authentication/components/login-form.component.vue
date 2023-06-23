@@ -36,19 +36,27 @@
 </template>
 
 <script>
+import {AuthApiService} from "../services/authApiService.js";
 
 export default {
   name: "login-form",
   data() {
     return {
       email: '',
-      password: ''
+      password: '',
+      authApi: new AuthApiService()
     }
   },
   methods: {
     login(event) {
       event.preventDefault();
-      this.$router.push("/home");
+      this.authApi.signIn(this.email, this.password)
+        .then(res => this.$router.push("/home"))
+        .catch(err => this.$toast.add({
+          severity: "warn",
+          detail: "Invalid email or password",
+          summary: "Please double-check your login credentials and try again."
+        }));
     }
   }
 }
