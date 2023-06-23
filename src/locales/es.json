@@ -81,6 +81,21 @@
       "role-header": "Rol"
     }
   },
+  "organization-settings": {
+    "change-picture": "Cambiar foto",
+    "current-plan": "Plan actual",
+    "change-plan": "Cambiar plan",
+    "add-members": "Agregar miembros",
+    "company-admin": "Administrador de la compañía",
+    "company-email": "Correo de la compañía",
+    "country": "País",
+    "company-phone": "Teléfono de la compañía",
+    "company-address": "Dirección de la compañía",
+    "save-changes": "Guardar cambios",
+    "return": "Regresar",
+    "plan-options": "Elige un plan",
+    "accept": "Aceptar"
+  },
   "recruitment-card": {
     "start-date-label": "Fecha de Inicio",
     "recruitment-status-label": "Estado de Reclutamiento",
@@ -135,7 +150,14 @@
   },
   "plans": {
     "free": "Free",
-    "premium": "Premium"
+    "free-feature-1": "Todas las funcionalidades de la plataforma.",
+    "free-feature-2": "Número limitado de reclutadores.",
+    "free-feature-3": "Número limitado de candidatos.",
+    "premium": "Premium",
+    "premium-feature-1": "Todas las funcionalidades de la plataforma.",
+    "premium-feature-2": "Número ilimitado de reclutadores",
+    "premium-feature-3": "Número ilimitado de candidatos.",
+    "premium-feature-4": "Soporte 24/7."
   },
   "page-not-found": {
     "main-image-alt": "Un dibujo de una lupa",
