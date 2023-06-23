@@ -29,6 +29,8 @@ import Tag from 'primevue/tag';
 import RadioButton from "primevue/radiobutton";
 
 import {createPinia} from "pinia";
+import ToastService from "primevue/toastservice";
+import Toast from "primevue/toast";
 
 // Pinia
 const pinia = createPinia();
@@ -38,11 +40,13 @@ createApp(App)
     .use(i18n)
     .use(router)
     .use(pinia)
+    .use(ToastService)
     .component('pv-message', Message)
     .component('pv-file-upload', FileUpload)
     .component('pv-checkbox', Checkbox)
     .component('pv-dropdown', Dropdown)
     .component('pv-sidebar', Sidebar)
+    .component('pv-toast', Toast)
     .component('pv-input', InputText)
     .component('pv-button', Button)
     .component('pv-card', Card)
