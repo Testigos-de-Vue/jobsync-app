@@ -108,6 +108,8 @@
       "title": "Nuevo proceso de reclutamiento",
       "title-placeholder": "Título",
       "description-placeholder": "Descripción (Opcional)",
+      "starting-date-lbl": "Fecha de inicio",
+      "ending-date-lbl": "Fecha de fin",
       "create-submit-lbl": "Crear"
     },
     "dashboard": {

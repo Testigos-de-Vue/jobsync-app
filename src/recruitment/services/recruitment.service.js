@@ -17,7 +17,7 @@ export class RecruitmentApiService {
     return http.get(`recruitment/processes/${id}/phases`);
   }
 
-  getPhasesCount(id){
-    return http.get(`recruitment/analytics/processes/${id}/phases/count`);
+  create(data) {
+    return http.post(`recruitment/processes`, data);
   }
 }

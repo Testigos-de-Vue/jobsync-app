@@ -110,6 +110,8 @@
       "title": "New recruitment process",
       "title-placeholder": "Title",
       "description-placeholder": "Description (Optional)",
+      "starting-date-lbl": "Starting date",
+      "ending-date-lbl": "Ending date",
       "create-submit-lbl": "Create"
     },
     "dashboard": {
