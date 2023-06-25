@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5059/api/v1/recruitment/processes";
+const BASE_URL = "https://jobsyncapitestigosvue.azurewebsites.net/api/v1/recruitment/processes";
 
 const http = axios.create({
   baseURL: BASE_URL
