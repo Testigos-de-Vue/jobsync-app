@@ -41,7 +41,8 @@
     </div>
   </div>
 
-  <pv-dialog v-model:visible="createRecruitmentDialog" modal
+  <pv-dialog v-model:visible="createRecruitmentDialog"
+             modal
              class="w-1/3"
              :header="$t('recruitment.create-recruitment.title')">
     <form v-on:submit="saveRecruitment($event)">
@@ -53,7 +54,6 @@
             :placeholder="$t('recruitment.create-recruitment.title-placeholder')"
         />
         <pv-input
-            required
             v-model="processDescription"
             type="text"
             :placeholder="$t('recruitment.create-recruitment.description-placeholder')"
@@ -128,15 +128,14 @@ export default {
         startingDate: this.startingDate,
         endingDate: this.endingDate,
         status: true
-      })
-          .then(res => {
+      }).then(response => {
             this.createRecruitmentDialog = false;
             this.recruitmentApi.getAll()
                 .then(response => this.recruitments = response.data);
             this.$toast.add({
               severity: "success",
               summary: "New recruitment process created",
-              detail: res.data.message,
+              detail: response.data.message,
               life: 3000
             });
           })

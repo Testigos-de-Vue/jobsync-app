@@ -114,6 +114,12 @@
       "ending-date-lbl": "Ending date",
       "create-submit-lbl": "Create"
     },
+    "create-phase": {
+      "title": "New phase",
+      "title-placeholder": "Title",
+      "description-placeholder": "Description (Optional)",
+      "create-submit-lbl": "Create"
+    },
     "dashboard": {
       "add-phase-lbl": "Add phase",
       "add-candidates-lbl": "Add candidates",
