@@ -110,6 +110,14 @@
       "title": "New recruitment process",
       "title-placeholder": "Title",
       "description-placeholder": "Description (Optional)",
+      "starting-date-lbl": "Starting date",
+      "ending-date-lbl": "Ending date",
+      "create-submit-lbl": "Create"
+    },
+    "create-phase": {
+      "title": "New phase",
+      "title-placeholder": "Title",
+      "description-placeholder": "Description (Optional)",
       "create-submit-lbl": "Create"
     },
     "dashboard": {
@@ -129,7 +137,9 @@
         "email-lbl": "Email",
         "phone-lbl": "Phone"
       }
-    }
+    },
+    "no-recruitments-found-message": "No recruitments found",
+    "no-candidates-found-message": "No candidates"
   },
   "activities": {
     "schedule-title": "Today's Schedule"
