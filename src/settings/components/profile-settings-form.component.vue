@@ -6,7 +6,7 @@
       <p class="text-center text-2xl font-bold mb-2">{{ user.name }}</p>
       <div class="flex flex-col items-center gap-4 pt-8">
         <img
-          :src="previewImage ?? user.profileImageUrl"
+          :src="previewImage ?? user.imageUrl"
           alt="Your profile image"
           class="h-44 w-44 object-cover border-2 border-gray-400 p-2 rounded-full"
         >
@@ -28,8 +28,12 @@
           />
         </div>
         <div class="w-full">
-          <label for="username">{{ $t('auth.name') }}</label>
-          <pv-input id="username" required v-model="user.name" class="w-full" />
+          <label for="username">{{ $t('auth.first-name') }}</label>
+          <pv-input id="username" required v-model="user.firstName" class="w-full" />
+        </div>
+        <div class="w-full">
+          <label for="username">{{ $t('auth.last-name') }}</label>
+          <pv-input id="username" required v-model="user.lastName" class="w-full" />
         </div>
         <div class="w-full">
           <label for="email">{{ $t('auth.e-mail') }}</label>
@@ -53,10 +57,9 @@
           </div>
         </div>
         <div>
-          <pv-checkbox v-model="user.subscribedToNewsLetter" inputId="agree-to-privacy-policy" name="agree-to-privacy-policy" value="Agree" />
+          <pv-checkbox inputId="agree-to-privacy-policy" name="agree-to-privacy-policy"  value="Agree" />
           <label for="agree-to-privacy-policy" class="ml-2">
-            {{ $t('auth.agree-privacy-policy') }}
-            <a :href="$t('link.terms-of-service')" target="_blank" class="text-primary dark:text-primary hover:font-medium">{{ $t('auth.privacy-policy') }}</a>
+            {{ $t('auth.subscribe-newsletter') }}
           </label>
         </div>
       </div>
@@ -85,6 +88,8 @@
 <script>
 import {CountriesApiService} from "../../shared/services/countries.service.js";
 import {AuthApiService} from "../../authentication/services/authApiService.js";
+import {useUserStore} from "../../authentication/store/user-store.store.js";
+import {computed} from "vue";
 
 export default {
   name: "profile-settings-form",
@@ -93,20 +98,25 @@ export default {
       reader: new FileReader(),
       previewImage: null,
       file: null,
-      user: {},
       authApi: new AuthApiService(),
       countries: [],
       countriesApi: new CountriesApiService(),
       selectedCountry: 'Peru',
+      subscribe: true,
       password: '',
       newPassword: '',
       confirmNewPassword: ''
     }
   },
+  setup() {
+    const userStore = useUserStore();
+    const user = computed(() => userStore.$state.user);
+    return {
+      user
+    };
+  },
   created() {
     this.loadCountries();
-    this.authApi.getUserById(1)
-      .then(response => this.user = response.data);
   },
   methods: {
     loadCountries() {

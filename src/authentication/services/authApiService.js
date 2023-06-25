@@ -6,10 +6,11 @@ const http = axios.create({
 
 export class AuthApiService {
 
-  signUp(firstName, lastName, email, password, phoneNumber, isSubscribedToNewsletter, isRecruiter) {
+  signUp(firstName, lastName, country, email, password, phoneNumber, isSubscribedToNewsletter, isRecruiter) {
     return http.post('sign-up', {
       firstName: firstName,
       lastName: lastName,
+      country: country,
       email: email,
       password: password,
       phoneNumber: phoneNumber,
@@ -23,12 +24,6 @@ export class AuthApiService {
       email: email,
       password: password
     })
-      .then(res => {
-        if (res.data.token) {
-          localStorage.setItem('user', JSON.stringify(res.data));
-        }
-        return res.data;
-      })
   }
 
   logout() {
