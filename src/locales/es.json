@@ -127,7 +127,9 @@
         "email-lbl": "Email",
         "phone-lbl": "Contacto"
       }
-    }
+    },
+    "no-recruitments-found-message": "No se encontraron procesos de reclutamiento",
+    "no-candidates-found-message": "No se encontraron candidatos"
   },
   "activities": {
     "schedule-title": "Tareas de hoy"

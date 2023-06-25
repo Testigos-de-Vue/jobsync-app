@@ -44,14 +44,14 @@
             <div class="bg-purple-600 dark:bg-purple-950 px-2 py-2 rounded-xl text-white">
               <p class="font-medium">
                 <i class="pi pi-user" />
-                {{ recruitment.phases.length }}
+                {{ candidates.length }}
                 {{ $t('recruitment.dashboard.candidates-counter')}}
               </p>
             </div>
             <div class="bg-red-600 dark:bg-red-950 px-2 py-2 rounded-xl text-white">
               <p class="font-medium">
                 <i class="pi pi-user" />
-                {{ recruitment.phases.length }}
+                {{ phases.length }}
                 {{ $t('recruitment.dashboard.phases-counter')}}
               </p>
             </div>
@@ -62,8 +62,8 @@
         </div>
       </div>
     </div>
-    <div class="flex space-x-4 overflow-x-auto" v-if="recruitment && recruitment.phases">
-      <recruitment-phase-card v-for="phase in recruitment.phases" :key="phase.id" :phase="phase"/>
+    <div class="flex space-x-4 overflow-x-auto" v-if="recruitment && phases">
+      <recruitment-phase-card v-for="phase in phases" :key="phase.id" :phase="phase"/>
     </div>
   </div>
 </template>
@@ -82,13 +82,17 @@ export default {
       addCandidatesDialog: false,
       recruitmentSettingDialog: false,
       recruitmentApi: new RecruitmentApiService(),
-      recruitment: {}
+      recruitment: {},
+      phases: [],
+      candidates: []
     }
   },
   created() {
     const recruitmentId = this.$route.params.id;
     this.recruitmentApi.getById(recruitmentId)
         .then(response => this.recruitment = response.data);
+    this.recruitmentApi.getPhases(recruitmentId)
+        .then(response => this.phases = response.data);
   }
 }
 </script>

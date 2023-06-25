@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-4">
+  <div class="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-8">
     <div class="flex flex-col gap-4">
       <pv-button
         rounded
@@ -30,10 +30,11 @@
         @click="candidatesHistory = true"
       />
     </div>
-    <div class="flex justify-center items-center h-full">
-      <div class="grid max-w-4xl py-4 space-y-4">
-        <recruitment-card v-for="recruitment in recruitments" :recruitment="recruitment"/>
-      </div>
+    <div class="grid space-y-4">
+      <h1 v-if="recruitments.length === 0">
+        {{ $t('recruitment.no-recruitments-found-message') }}
+      </h1>
+      <recruitment-card v-for="recruitment in recruitments" :recruitment="recruitment"/>
     </div>
   </div>
 
@@ -82,9 +83,6 @@
     created() {
       this.recruitmentApi.getAll()
         .then(response => this.recruitments = response.data);
-    },
-    methods: {
-
     }
   }
     
