@@ -66,7 +66,7 @@
   
   <script>
   import RecruitmentCard from "../components/recruitment-card.component.vue";
-  import {RecruitmentApiService} from "../../shared/services/recruitment.service.js";
+  import {RecruitmentApiService} from "../services/recruitment.service.js";
   
   export default {
     name: "organization-recruitments",
