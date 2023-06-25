@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const http = axios.create({
-  baseURL: 'http://localhost:56480/api/v1/users'
+  baseURL: 'https://jobsyncapitestigosvue.azurewebsites.net/api/v1/users'
 });
 
 export class AuthApiService {
@@ -13,7 +13,7 @@ export class AuthApiService {
       email: email,
       password: password,
       phoneNumber: phoneNumber,
-      isSubscribedToNewsletter: isSubscribedToNewsletter,
+      isSubscribedToNewsletter: true,
       isRecruiter: isRecruiter
     })
   }
