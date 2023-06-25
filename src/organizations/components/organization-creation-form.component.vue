@@ -84,7 +84,7 @@
 <script>
 import {CountriesApiService} from "../../shared/services/countries.service.js";
 
-export default {
+export default  {
   name: "organization-creation-form",
   data() {
     return {
