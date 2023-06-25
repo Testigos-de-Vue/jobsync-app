@@ -18,15 +18,16 @@ import RecruitersHome from "../recruiters/pages/recruiters-home.component.vue";
 import PageNotFoundComponent from "../shared/pages/page-not-found.component.vue";
 import RecruitmentDashboard from "../recruitment/pages/recruitment-dashboard.component.vue";
 import CandidateApplicationsDashboard from "../recruitment/pages/candidate-applications-dashboard.component.vue";
+import {useUserStore} from "../authentication/store/user-store.store.js";
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/home', name: 'Recruiter Home', component: RecruitersHome },
-    { path: '/login', name: 'Log In', component: Login },
-    { path: '/register', name: 'Register', component: Register },
-    { path: '/forgot-password', name: 'Forgot Password', component: ForgotPassword},
-    { path: '/recover-password', name: 'Password Recovery', component: PasswordRecovery},
+    { path: '/home', name: 'Recruiter Home', component: RecruitersHome, meta: { requiresAuth: true }},
+    { path: '/login', name: 'Log In', component: Login, meta: { requiresAuth: false }},
+    { path: '/register', name: 'Register', component: Register, meta: { requiresAuth: false } },
+    { path: '/forgot-password', name: 'Forgot Password', component: ForgotPassword, meta: { requiresAuth: false }},
+    { path: '/recover-password', name: 'Password Recovery', component: PasswordRecovery, meta: { requiresAuth: false }},
     { path: '/settings',
       name: 'Settings',
       component: Settings,
@@ -34,18 +35,28 @@ const router = createRouter({
         { path: '', name: 'Settings redirect', redirect: '/settings/profile', component: ProfileSettingsForm },
         { path: 'profile', name: 'Profile Settings', component: ProfileSettingsForm },
         { path: 'app', name: 'App Settings', component: AppSettingsForm }
-      ]
+      ],
+      meta: { requiresAuth: true }
     },
-    { path: '/applications', name: 'Applications', component: CandidateApplicationsDashboard },
-    { path: '/organizations/create', name: 'Organizations Creation', component: OrganizationCreation },
-    { path: '/organizations/settings', name: 'Organization Settings', component: OrganizationSettings},
+    { path: '/applications', name: 'Applications', component: CandidateApplicationsDashboard, meta: { requiresAuth: true } },
+    { path: '/organizations/create', name: 'Organizations Creation', component: OrganizationCreation, meta: { requiresAuth: true } },
+    { path: '/organizations/settings', name: 'Organization Settings', component: OrganizationSettings, meta: { requiresAuth: true }},
     // This should go to /TestigosdeVue/home
-    { path: '/profile', name: 'Organization', component: OrganizationProfile },
-    { path: '/recruitments', name: 'Recruitments', component: OrganizationRecruitments },
-    { path: '/:id/dashboard', name: 'Recruitment Dashboard', component: RecruitmentDashboard },
-    { path: '/:pathMatch(.*)*', name: 'Error 404', component: PageNotFoundComponent },
+    { path: '/profile', name: 'Organization', component: OrganizationProfile, meta: { requiresAuth: true } },
+    { path: '/recruitments', name: 'Recruitments', component: OrganizationRecruitments, meta: { requiresAuth: true } },
+    { path: '/:id/dashboard', name: 'Recruitment Dashboard', component: RecruitmentDashboard, meta: { requiresAuth: true } },
+    { path: '/:pathMatch(.*)*', name: 'Error 404', component: PageNotFoundComponent, meta: { requiresAuth: true } },
     { path: '/', redirect: '/home'},
   ]
 });
+
+router.beforeEach((to, from, next) => {
+  const userStore = useUserStore();
+  if (to.meta.requiresAuth && !userStore.isAuthenticated) {
+    next('/login');
+  } else {
+    next();
+  }
+})
 
 export default router;

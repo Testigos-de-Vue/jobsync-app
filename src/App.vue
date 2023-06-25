@@ -21,7 +21,7 @@
       </router-link>
     </header>
     <aside v-if="!isAnAuthenticationPath($route.path)" class="hidden md:flex p-8 h-full">
-      <side-bar v-bind:user="user" />
+      <side-bar />
     </aside>
     <main class="p-8 w-full h-full">
       <router-view />
@@ -29,7 +29,6 @@
   </div>
   <mobile-nav-bar
     :visible="visibleMobileBar"
-    v-bind:user="user"
     v-on:hide="hideBottomBar"
   />
 </template>
@@ -40,33 +39,47 @@ import SideBar from "./shared/components/side-bar.component.vue";
 import MobileNavBar from "./shared/components/mobile-nav-bar.component.vue";
 import {AuthApiService} from "./authentication/services/authApiService.js";
 import {useThemeStore} from "./settings/stores/app-theme.store.js";
+import {useUserStore} from "./authentication/store/user-store.store.js";
+import {computed} from "vue";
 export default {
   components: {MobileNavBar, SideBar},
   data() {
     return {
       visibleMobileBar: false,
-      authenticationPaths: new Set(["/login", "/register","/password-recovery", "/forgot-password"]),
-      authApi: new AuthApiService(),
-      user: {}
+      authenticationPaths: new Set([
+        "/login",
+        "/register",
+        "/password-recovery",
+        "/forgot-password",
+        "/recover-password"
+      ]),
+      authApi: new AuthApiService()
     }
+  },
+  setup() {
+    const userStore = useUserStore();
+
+    const setUser = (user) => {
+      userStore.setUser(user);
+    };
+
+    return { setUser };
   },
   created() {
     this.$i18n.locale = localStorage.getItem("preferred-language") ?? "en";
-    // 1=recruiter 4=candidate
-    const userId = 1;
-    this.authApi.getUserById(userId)
-      .then(response => this.user = response.data);
+    const user = localStorage.getItem("user");
+    user && this.setUser(JSON.parse(user));
   },
   computed: {
     theme() {
       return useThemeStore().theme;
-    },
+    }
   },
   watch: {
     theme(newTheme) {
       const store = useThemeStore();
       store.setTheme(newTheme);
-    },
+    }
   },
   mounted() {
     const store = useThemeStore();

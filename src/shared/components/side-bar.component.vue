@@ -10,7 +10,7 @@
     w-[320px] h-full py-8 shadow-lg"
   >
     <div class="px-8">
-      <avatar-card :user="user" />
+      <avatar-card :user="currentUser" />
     </div>
     <div class="dark:text-white">
       <nav>
@@ -26,7 +26,7 @@
               {{ $t('navbar.home') }}
             </router-link>
           </li>
-          <li v-if="!user.isRecruiter">
+          <li v-if="!currentUser.isRecruiter">
             <router-link
                 to="/applications"
                 class="hover:bg-white hover:bg-opacity-50 dark:hover:bg-slate-700"
@@ -37,7 +37,7 @@
               {{ $t('navbar.applications') }}
             </router-link>
           </li>
-          <li v-if="user.isRecruiter">
+          <li v-if="currentUser.isRecruiter">
             <router-link
               to="/recruitments"
               class="hover:bg-white hover:bg-opacity-50 dark:hover:bg-slate-700"
@@ -48,7 +48,7 @@
               {{ $t('navbar.recruitments') }}
             </router-link>
           </li>
-          <li v-if="user.isRecruiter">
+          <li v-if="currentUser.isRecruiter">
             <router-link
               to="/profile"
               class="hover:bg-white hover:bg-opacity-50 dark:hover:bg-slate-700"
@@ -77,11 +77,12 @@
               {{ $t('navbar.settings') }}
             </router-link>
           </li>
-          <li v-if="user.isRecruiter">
+          <li v-if="currentUser.isRecruiter">
             <organization-switch />
           </li>
           <li>
             <router-link
+              @click.native.prevent="logout()"
               to="/login"
               class="hover:bg-white hover:bg-opacity-50 dark:hover:bg-slate-700"
             >
@@ -100,12 +101,24 @@
 <script>
 import AvatarCard from "./avatar-card.component.vue";
 import OrganizationSwitch from "../../organizations/components/organization-switch.component.vue";
+import {computed} from "vue";
+import {useUserStore} from "../../authentication/store/user-store.store.js";
 
 export default {
   name: "side-bar",
   components: {AvatarCard, OrganizationSwitch},
-  props: {
-    user: null
+  setup() {
+    const userStore = useUserStore();
+    const currentUser = computed(() => userStore.$state.user);
+    return {
+      currentUser,
+    };
+  },
+  methods: {
+    logout() {
+      const userStore = useUserStore();
+      userStore.logout();
+    }
   }
 }
 </script>

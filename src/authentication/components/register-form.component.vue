@@ -207,6 +207,7 @@ export default {
       this.authApi.signUp(
         this.firstName,
         this.lastName,
+        this.selectedCountry,
         this.email,
         this.password,
         this.phoneNumber.toString(),
@@ -217,9 +218,12 @@ export default {
           this.$toast.add({
             severity: "success",
             summary: "Success",
-            detail: res.data.message,
+            detail: `${res.data.message}. Redirecting to login...`,
             life: 3000
           });
+          setTimeout(() => {
+            this.$router.push("/login");
+          }, 3000);
         })
         .catch(err => {
           this.$toast.add({

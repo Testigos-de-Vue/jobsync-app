@@ -37,6 +37,7 @@
 
 <script>
 import {AuthApiService} from "../services/authApiService.js";
+import {useUserStore} from "../store/user-store.store.js";
 
 export default {
   name: "login-form",
@@ -47,11 +48,26 @@ export default {
       authApi: new AuthApiService()
     }
   },
+  setup() {
+    const userStore = useUserStore();
+
+    const setUser = (user) => {
+      userStore.setUser(user);
+    };
+
+    return { setUser };
+  },
   methods: {
     login(event) {
       event.preventDefault();
       this.authApi.signIn(this.email, this.password)
-        .then(res => this.$router.push("/home"))
+        .then(res => {
+          if (res.data.token) {
+            localStorage.setItem('user', JSON.stringify(res.data));
+          }
+          this.setUser(res.data);
+          this.$router.push("/home")
+        })
         .catch(err => this.$toast.add({
           severity: "warn",
           detail: "Invalid email or password",
