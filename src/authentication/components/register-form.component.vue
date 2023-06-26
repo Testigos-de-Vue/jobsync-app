@@ -211,7 +211,7 @@ export default {
         this.email,
         this.password,
         this.phoneNumber.toString(),
-        this.subscribeToNewsletter,
+        this.subscribeToNewsletter[0]==="Subscribe" ? true : false,
         !this.isCandidate
       )
         .then(res => {

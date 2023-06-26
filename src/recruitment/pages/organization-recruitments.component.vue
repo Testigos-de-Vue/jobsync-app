@@ -30,7 +30,7 @@
           @click="candidatesHistory = true"
       />
     </div>
-    <div class="grid space-y-4 overflow-y-auto h-screen">
+    <div class="grid space-y-4 overflow-y-auto">
       <h1 v-if="recruitments.length === 0">
         {{ $t('recruitment.no-recruitments-found-message') }}
       </h1>
